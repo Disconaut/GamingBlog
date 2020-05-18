@@ -13,11 +13,3 @@ const headroom = new Headroom(header, {
 });
 
 headroom.init();
-
-$(".navbar-collapse").on("show.bs.collapse", function(){
-    $(document.body).addClass("collapse-show");
-});
-
-$(".navbar-collapse").on("hide.bs.collapse", function(){
-    $(document.body).removeClass("collapse-show");
-});
