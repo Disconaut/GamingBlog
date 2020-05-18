@@ -71,8 +71,14 @@ body:not(.collapse-show):not(.product-page) > .header-top {
 }
 
 .image-darken {
-  background-blend-mode: multiply;
-  background-color: rgba(0, 0, 0, 0.3);
+  + .darker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .carousel {
@@ -179,7 +185,7 @@ body:not(.collapse-show):not(.product-page) > .header-top {
     bottom: -1 * map-get($spacers, 4);
     left: 0;
     right: 0;
-    margin-top: map-get($spacers, 1 _5);
+    margin-top: map-get($spacers, 1_5);
 
     @media(min-width: 1200px) {
       position: absolute;
@@ -254,7 +260,7 @@ body:not(.collapse-show):not(.product-page) > .header-top {
 
   > .col,
   > [class *= "col-"] {
-    padding: map-get($spacers, 0 _5);
+    padding: map-get($spacers, 0_5);
   }
 }
 
@@ -403,7 +409,7 @@ body:not(.collapse-show):not(.product-page) > .header-top {
         color: #555;
         line-height: 1.4em;
         font-size: 0.9375rem;
-        margin-bottom: map-get($spacers, 0 _5);
+        margin-bottom: map-get($spacers, 0_5);
       }
 
       .card-text {
@@ -478,9 +484,11 @@ body:not(.collapse-show):not(.product-page) > .header-top {
         border: 1px solid #dddddd;
         cursor: pointer;
         overflow: hidden;
+
         &.active, &:hover {
           border-color: #000;
         }
+
         &:not(:last-child) {
           margin: 0 map-get($spacers, 1) 0 0;
         }
@@ -599,7 +607,7 @@ body {
   text-transform: uppercase;
   letter-spacing: .1em;
 
-  &::before{
+  &::before {
     position: absolute;
     top: 50%;
     left: 0;
@@ -615,10 +623,11 @@ body {
   line-height: 1.15em;
 }
 
-.item-price{
+.item-price {
   font-size: 1.125rem;
   font-family: "Muli", sans-serif;
   color: #000;
+
   > s:first-child {
     margin-right: map-get($spacers, 1);
   }
@@ -671,7 +680,7 @@ img.decoration {
 
     > .col,
     > [class *= "col-"] {
-      padding: map-get($spacers, 1 _5);
+      padding: map-get($spacers, 1_5);
     }
   }
 
