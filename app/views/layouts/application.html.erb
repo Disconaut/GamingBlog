@@ -1,15 +1,198 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>GamingBlog</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= content_for?(:title) ? yield(:title) : "Omela Shop" %></title>
+  <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Omela Shop is the best shop in the world" %>">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= content_for?(:styles) ? yield(:styles) : '' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= content_for?(:headScripts) ? yield(:scripts) : '' %>
+</head>
 
-  <body>
-    <%= yield %>
-  </body>
+<body>
+<header class="fixed-top bg-dark header-top">
+  <nav class="navbar py-1_5 navbar-expand-lg navbar-dark w-100">
+    <div class="container position-relative">
+      <%= link_to root_path, class: "navbar-brand order-1 order-lg-2 mx-0" do %>
+        <%= inline_svg_tag "logo.svg" %>
+      <% end %>
+      <button class="hamburger hamburger--spring navbar-toggler order-2 collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+
+      <div class="col collapse p-0 position-static navbar-collapse order-3 order-lg-1" id="navbarMenu">
+        <ul class="navbar-nav mt-3 m-lg-0 mr-auto">
+          <li class="nav-item">
+            <%= link_to "Home", root_path, class: "nav-link", id: "homeLink" %>
+          </li>
+          <li class="nav-item dropdown pages-menu">
+            <%= link_to "Pages", "#!", class: "nav-link dropdown-toggle", id: "navbarDropdown",
+                        role: "button", "data-toggle": "dropdown", "aria-haspopup": "true", "aria-expanded": "false",
+                        "data-turbolinks": "false" %>
+            <div class="dropdown-menu shadow" aria-labelledby="navbarDropdown">
+              <div class="row">
+                <ul class="list-unstyled col-6 col-md-3 col-lg-2">
+                  <li><h6 class="dropdown-header text-uppercase">Home</h6></li>
+                  <li><a class="dropdown-item underline" href="index.html">Home - classic</a></li>
+                  <li><a class="dropdown-item underline" href="index-carousel.html">Home - carousel</a></li>
+                  <li><a class="dropdown-item underline" href="index-categories.html">Home - categories</a></li>
+                  <li><a class="dropdown-item underline" href="index-modern.html">Home - modern</a></li>
+                  <li><a class="dropdown-item underline" href="index-minimal.html">Home - minimal</a></li>
+                  <li><h6 class="dropdown-header text-uppercase">Shop</h6></li>
+                  <li><a class="dropdown-item underline" href="listing-sidebar.html">Listing - sidebar</a></li>
+                  <li><a class="dropdown-item underline" href="listing-full.html">Listing - full width</a></li>
+                  <li><a class="dropdown-item underline" href="listing-masonry.html">Listing - masonry</a></li>
+                  <li><%= link_to "Listing - modern", 'listing', class: "dropdown-item underline" %></li>
+                </ul>
+                <ul class="list-unstyled col-6 col-md-3 col-lg-2">
+                  <li><h6 class="dropdown-header text-uppercase">Product</h6></li>
+                  <li><a class="dropdown-item underline" href="product-classic.html">Product - classic</a></li>
+                  <li><a class="dropdown-item underline" href="product-scroll.html">Product - scroll</a></li>
+                  <li><a class="dropdown-item underline" href="product-masonry.html">Product - masonry</a></li>
+                  <li><a class="dropdown-item underline" href="product-modern.html">Product - modern</a></li>
+                  <li><a class="dropdown-item underline" href="product-promo.html">Product - promo</a></li>
+                  <li><a class="dropdown-item underline" href="product-oos.html">Product - out of stock</a></li>
+                  <li><h6 class="dropdown-header text-uppercase">Order</h6></li>
+                  <li><a class="dropdown-item underline" href="cart.html">Cart</a></li>
+                  <li><a class="dropdown-item underline" href="cart-full.html">Cart - full width</a></li>
+                  <li><a class="dropdown-item underline" href="checkout.html">Checkout</a></li>
+                </ul>
+                <ul class="list-unstyled col-6 col-md-3 col-lg-2">
+                  <li><h6 class="dropdown-header text-uppercase">Account</h6></li>
+                  <li><a class="dropdown-item underline" href="portal.html">Log In</a></li>
+                  <li><a class="dropdown-item underline" href="profile.html">Profile</a></li>
+                  <li><a class="dropdown-item underline" href="profile-orders.html">Orders</a></li>
+                  <li><a class="dropdown-item underline" href="profile-addresses.html">Addresses</a></li>
+                  <li><a class="dropdown-item underline" href="profile-payments.html">Payments</a></li>
+                  <li><a class="dropdown-item underline" href="profile-wishlist.html">Wishlist</a></li>
+                  <li><h6 class="dropdown-header text-uppercase">Blog</h6></li>
+                  <li><a class="dropdown-item underline" href="blog-cards.html">Blog - cards</a></li>
+                  <li><a class="dropdown-item underline" href="blog-posts.html">Blog - posts</a></li>
+                  <li><a class="dropdown-item underline" href="post.html">Post</a></li>
+                </ul>
+                <ul class="list-unstyled col-6 col-md-3 col-lg-2">
+                  <li><h6 class="dropdown-header text-uppercase">Pages</h6></li>
+                  <li><a class="dropdown-item underline" href="about.html">About</a></li>
+                  <li><a class="dropdown-item underline" href="contact.html">Contact</a></li>
+                  <li><a class="dropdown-item underline" href="faq.html">FAQ</a></li>
+                  <li><a class="dropdown-item underline" href="text.html">Text Page</a></li>
+                  <li><a class="dropdown-item underline" href="404.html">404</a></li>
+                  <li><a class="dropdown-item underline" href="coming-soon.html">Coming Soon</a></li>
+                  <li><h6 class="dropdown-header text-uppercase">Docs</h6></li>
+                  <li><a class="dropdown-item underline" href="/documentation/index.html">Documentation</a></li>
+                  <li><a class="dropdown-item underline" href="/documentation/changelog.html">Changelog</a></li>
+                </ul>
+                <div class="col-lg-4">
+                  <div class="promo">
+                    <%#= image_tag , class: "obj-fit-cover obj-position-center w-100 h-100" %>
+                    <div class="promo-footer p-4 text-white">
+                      <h3 class="mb-0">New Collection</h3>
+                      <a href="#!" class="eyebrow underline text-white text-uppercase">Shop Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="documentation/index.html">
+              Docs
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col collapse p-0 navbar-collapse order-4 order-lg-3" id="navbarMenu2">
+        <ul class="navbar-nav mt-3 mt-lg-0 align-items-lg-center ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="portal.html">Log In</a>
+          </li>
+          <li class="nav-item">
+            <a data-toggle="modal" data-target="#search" class="nav-link">
+              <%= fa_icon "search" %>
+            </a>
+          </li>
+          <li class="nav-item cart">
+            <a data-toggle="modal" data-target="#cart" class="nav-link d-flex align-items-center rounded-0">
+              <span class="px-1 py-0_5 border border-right-0">Cart</span>
+              <span class="px-1 py-0_5 border">2</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main role="main">
+  <%= yield %>
+</main>
+<!-- footer -->
+<footer class="bg-dark text-white-50 py-0">
+  <div class="container">
+    <div class="row separated">
+      <div class="col-lg-6 py-10">
+        <div class="row mb-3">
+          <div class="col-md-8">
+            <p class="m-0">Thanks to <a href="https://www.opumo.com" class="text-white underline">Opumo</a> for the product images used in this
+              demo theme. Head over to <a href="https://www.opumo.com" class="text-white underline">their store</a> to get these
+              products.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-10">
+            <h4 class="eyebrow text-uppercase mb-2">Quick Links</h4>
+            <nav><ul class="nav font-size-sm row-cols-2 flex-wrap">
+              <li class="nav-item mb-1"><a class="text-white underline" href="about.html">About</a></li>
+              <li class="nav-item mb-1"><a class="text-white underline" href="contact.html">Contact Us</a></li>
+              <li class="nav-item mb-1"><a class="text-white underline" href="faq.html">FAQ</a></li>
+              <li class="nav-item mb-1"><a class="text-white underline" href="blog.html">Blog</a></li>
+              <li class="nav-item mb-1"><a class="text-white underline" href="text.html">Terms of Use</a></li>
+            </ul></nav>
+          </div>
+        </div>
+      </div>
+      <div class="col p-lg-0 separator"></div>
+      <div class="col-lg-6 py-10">
+        <div class="row justify-content-end mb-3">
+          <div class="col-lg-10">
+
+            <h4 class="eyebrow text-uppercase mb-2">Subscribe</h4>
+            <form><div class="input-group">
+              <input type="email" class="form-control form-control-lg" placeholder="Email" aria-label="Subscribe" aria-describedby="button-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-light" type="button" id="subscribeButton">Subscribe</button>
+              </div>
+            </div></form>
+          </div>
+        </div>
+        <div class="row justify-content-end">
+          <div class="col-lg-10">
+            <h4 class="eyebrow text-uppercase mb-2">Follow us</h4>
+            <ul class="list-unstyled row">
+              <li class="col-auto" >
+              <a class="text-white-50" href="#!"><%= fab_icon 'facebook-f' %></a>
+              </li>
+              <li class="col-auto" >
+                <a class="text-white-50" href="#!"><%= fab_icon 'twitter' %></a>
+              </li>
+              <li class="col-auto" >
+                <a class="text-white-50" href="#!"><%= fab_icon 'youtube' %></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<%= javascript_pack_tag 'layout', 'data-turbolinks-track': 'reload' %>
+<%= content_for?(:bottomScripts) ? yield(:bottomScripts) : '' %>
+</body>
 </html>
