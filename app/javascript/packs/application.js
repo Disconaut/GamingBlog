@@ -12,7 +12,6 @@ import('../src/plugins');
 import "@fortawesome/fontawesome-free/js/all"
 
 $(document).on('ready turbolinks:load', function(){
-    console.log("hello");
     $(".navbar-collapse").on("show.bs.collapse", function(){
         $(document.body).addClass("collapse-show");
     });

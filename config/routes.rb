@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'posts/index'
+  get 'posts/create'
+  post 'posts/create'
+  get 'posts/edit'
+  get 'posts/delete'
   root  'blog#index'
   get '/posts', to: 'blog#posts'
   get '/post', to: 'blog#post'
