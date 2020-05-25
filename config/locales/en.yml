@@ -31,3 +31,9 @@
 
 en:
   hello: "Hello world"
+  
+  activerecord:
+    attributes:
+      post:
+        thumb_img: Thumb image
+        header_img: Header image [1300x200]

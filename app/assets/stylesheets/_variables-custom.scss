@@ -1,0 +1,301 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 1200px,
+        xl: 1600px
+);
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 1170px,
+        xl: 1300px
+);
+
+$navbar-padding-y:                  $spacer * 1.25;
+$navbar-padding-x:                  $grid-gutter-width / 2;
+
+$navbar-dark-color:                 rgba($white, .6);
+$navbar-dark-hover-color:           $white;
+
+$navbar-light-color:                rgba($black, .5);
+$navbar-light-hover-color:          $black;
+
+
+$gray-100: #efefef;
+$gray-300: #dddddd;
+$gray-800: #555;
+$gray-900: #101010;
+
+$grays: ();
+
+$grays: map-merge(
+                (
+                        "100": $gray-100,
+                        "200": $gray-200,
+                        "300": $gray-300,
+                        "400": $gray-400,
+                        "500": $gray-500,
+                        "600": $gray-600,
+                        "700": $gray-700,
+                        "800": $gray-800,
+                        "900": $gray-900
+                ),
+                $grays
+);
+
+$blue: #013A80;
+$purple: #3B416B;
+$pink: #FF9EBD;
+$red: #E35D46;
+$yellow: #F5BE17;
+$green: #00635C;
+
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: ();
+
+$colors: map-merge(
+                (
+                        "blue": $blue,
+                        "indigo": $indigo,
+                        "purple": $purple,
+                        "pink": $pink,
+                        "red": $red,
+                        "orange": $orange,
+                        "yellow": $yellow,
+                        "green": $green,
+                        "teal": $teal,
+                        "cyan": $cyan,
+                        "white": $white,
+                        "gray": $gray-600,
+                        "gray-dark": $gray-900
+                ),
+                $colors
+);
+
+$primary: #4F944F;
+$secondary: $gray-300;
+$success: #4F944F;
+$dark: $gray-900;
+$light: #efefef;
+
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: ();
+
+$theme-colors: map-merge(
+                (
+                        "primary": $primary,
+                        "secondary": $secondary,
+                        "success": $success,
+                        "info": $info,
+                        "warning": $warning,
+                        "danger": $danger,
+                        "light": $light,
+                        "dark": $dark
+                ),
+                $theme-colors
+);
+
+// layout
+$section-padding: 6.25rem;
+$header-height: 5rem;
+$dropdown-item-padding-x: 0;
+$dropdown-item-padding-y: 0.125rem;
+$dropdown-font-size: 0.875rem;
+$dropdown-border-width: 0;
+$dropdown-header-color: $gray-500;
+$dropdown-border-radius: 0;
+$dropdown-link-hover-bg: inherit;
+$dropdown-link-active-bg: inherit;
+$dropdown-link-active-color: $gray-800;
+
+
+$dropdown-link-hover-color: $gray-900;
+
+$spacer: 1rem;
+$spacers: ();
+
+$spacers: map-merge(
+                (
+                        0: 0,
+                        0_5: ($spacer * .3125),
+                        1: ($spacer * .625),
+                        1_5: ($spacer * .9375),
+                        2: ($spacer * 1.25),
+                        3: ($spacer * 1.875),
+                        4: ($spacer * 2.5),
+                        5: ($spacer * 3.125),
+                        6: ($spacer * 3.75),
+                        7: ($spacer * 4.375),
+                        8: ($spacer * 5),
+                        9: ($spacer * 5.625),
+                        10: ($spacer * 6.25),
+                        11: ($spacer * 6.875),
+                        12: ($spacer * 7.5),
+                        13: ($spacer * 8.125),
+                        14: ($spacer * 8.75)
+                ),
+                $spacers
+);
+
+$font-size-list: (12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 50, 60, 70, 80, 90, 100);
+
+$font-family-base: "Open Sans", $font-family-sans-serif;
+
+$font-size-lg: $font-size-base * 1.125;
+
+$h1-font-size:                $font-size-base * 3.125;
+$h2-font-size:                $font-size-base * 2.5;
+$h3-font-size:                $font-size-base * 1.875;
+
+$headings-color: #000;
+$headings-font-family:        "Muli", sans-serif;
+$headings-font-weight:        400;
+$headings-line-height:        1.25;
+
+$display1-size:               $h1-font-size * 1.5;
+$display2-size:               $h2-font-size * 1.5;
+$display3-size:               $h3-font-size * 1.5;
+$display4-size:               $h4-font-size * 1.5;
+
+$input-btn-padding-y:         .9375rem;
+$input-btn-padding-x:         $input-btn-padding-y;
+$input-btn-font-size:         $font-size-sm;
+$input-btn-line-height:       1.5;
+
+$input-btn-focus-width:       0;
+
+$input-btn-padding-y-sm:      .625rem;
+$input-btn-padding-x-sm:      $input-btn-padding-y-sm;
+$input-btn-font-size-sm:      .75rem;
+
+$input-btn-padding-y-lg:      1.0625rem;
+$input-btn-padding-x-lg:      $input-btn-padding-y-lg;
+$input-btn-font-size-lg:      $font-size-sm;
+
+$btn-padding-y:               $input-btn-padding-y;
+$btn-padding-x:               ($input-btn-padding-x * 2);
+$btn-font-size:               $input-btn-font-size;
+$btn-line-height:             $input-btn-line-height;
+
+$btn-padding-y-sm:            $input-btn-padding-y-sm;
+$btn-padding-x-sm:            ($input-btn-padding-x-sm * 2);
+$btn-font-size-sm:            $input-btn-font-size-sm;
+
+$btn-padding-y-lg:            $input-btn-padding-y-lg;
+$btn-padding-x-lg:            ($input-btn-padding-x-lg * 2);
+$btn-font-size-lg:            $input-btn-font-size-lg;
+
+$btn-border-radius:           0;
+$btn-border-radius-lg:        0;
+$btn-border-radius-sm:        0;
+
+$label-margin-bottom:                   .25rem;
+
+$input-font-size: $font-size-sm;
+$input-font-size-lg: $font-size-sm;
+$input-font-size-sm: .75rem;
+
+$input-padding-y: 0.9375rem;
+$input-padding-y-lg: 1.0625rem;
+$input-padding-y-sm: 0.625rem;
+
+$input-padding-x: 0.9375rem;
+$input-padding-x-lg: 1.0625rem;
+$input-padding-x-sm: 0.625rem;
+
+$input-height-border:                   $input-border-width * 2;
+
+$input-height-inner:                    add($input-line-height * 1em, $input-padding-y * 2);
+$input-height-inner-half:               add($input-line-height * .5em, $input-padding-y);
+$input-height-inner-quarter:            add($input-line-height * .25em, $input-padding-y / 2);
+
+$input-height:                          add($input-line-height * 1em, add($input-padding-y * 2, $input-height-border, false));
+$input-height-sm:                       add($input-line-height-sm * 1em, add($input-padding-y-sm * 2, $input-height-border, false));
+$input-height-lg:                       add($input-line-height-lg * 1em, add($input-padding-y-lg * 2, $input-height-border, false));
+
+$input-focus-bg:                        transparent;
+$input-focus-box-shadow: none;
+
+$input-bg:                              transparent;
+$input-disabled-bg:                     rgba($black, .1);
+
+$input-box-shadow:                      none;
+
+$input-border-radius: 0;
+$input-border-radius-sm: 0;
+$input-border-radius-lg: 0;
+
+$card-border-radius: 0;
+$card-border-width: 0;
+$card-inner-border-radius: 0;
+
+$font-weight-light: 300;
+$font-weight-bold: 600;
+
+$breadcrumb-divider: quote(">");
+$breadcrumb-divider-color: inherit;
+$breadcrumb-font-size: 0.75rem;
+$breadcrumb-bg: trasparent;
+$breadcrumb-item-padding: 0.625rem;
+$breadcrumb-padding-x: 0;
+$breadcrumb-padding-y: 0;
+
+$enable-responsive-font-sizes: true;
+
+$pagination-color:                  $body-color;
+$pagination-bg:                     transparent;
+$pagination-border-color:           transparent;
+
+$pagination-hover-color:            $body-color;
+$pagination-hover-bg:               transparent;
+$pagination-hover-border-color:     $border-color;
+
+$pagination-active-color:           $black;
+$pagination-active-bg:              transparent;
+$pagination-active-border-color:    $black;
+
+$pagination-disabled-color:         $border-color;
+$pagination-disabled-bg:            transparent;
+$pagination-disabled-border-color:  transparent;
+
+// social colors
+$facebook: #3b5998;
+$google-plus: #dd4b39;
+$twitter: #00aced;
+$linkedin: #007bb6;
+$pinterest: #cb2027;
+$git: #666666;
+$tumblr: #32506d;
+$vimeo: #aad450;
+$youtube: #bb0000;
+$flickr: #ff0084;
+$reddit: #ff4500;
+$dribbble: #ea4c89;
+$skype: #00aff0;
+$instagram: #517fa4;
+$behance: #1769ff;
+$rss: #f26522;
+
+$socials: ();
+$socials: map-merge((
+        "facebook": $facebook,
+        "google-plus": $google-plus,
+        "twitter": $twitter,
+        "linkedin": $linkedin,
+        "pinterest": $pinterest,
+        "git": $git,
+        "tumblr": $tumblr,
+        "vimeo": $vimeo,
+        "flickr": $flickr,
+        "reddit": $reddit,
+        "dribbble": $dribbble,
+        "skype": $skype,
+        "instagram": $instagram,
+        "behance": $behance,
+        "rss": $rss
+), $socials);
