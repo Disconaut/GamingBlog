@@ -1,3 +1,7 @@
+<% content_for :headScripts do %>
+  <%= javascript_pack_tag 'post_editor', 'data-turbolinks-track': 'reload' %>
+<% end %>
+
 <section class="jumbotron position-relative jumbotron-fluid pt-14 pb-6 bg-blue">
   <%= image_tag 'decoration.png', class: 'decoration obj-position-center' %>
   <div class="container">
@@ -48,7 +52,7 @@
     </div>
     <div class="form-group">
       <%= f.label :content %>
-      <%= f.text_area :content, class: 'form-control tinymce' %>
+      <%= f.text_area :content, class: 'form-control tinymce vh-80' %>
     </div>
     <div class="form-group">
       <div class="row justify-content-end">
