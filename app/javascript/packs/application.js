@@ -12,6 +12,13 @@ import('../src/plugins');
 import "@fortawesome/fontawesome-free/js/all"
 
 $(document).on('ready turbolinks:load', function(){
+    console.log($(".custom-file-input"));
+    $(".custom-file-input").on("change", function() {
+        console.log("hello");
+        let fileName = $(this).val().split("\\").pop();
+        $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+    });
+
     $(".navbar-collapse").on("show.bs.collapse", function(){
         $(document.body).addClass("collapse-show");
     });

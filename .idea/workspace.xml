@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3580cb4c-d39c-4263-8140-ba6f2da6d4dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.generators" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.generators" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/GamingBlog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GamingBlog.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/blog_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/blog_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/packs/post_editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/packs/post_editor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/blog/post.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/blog/post.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/create.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/create.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack/development.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack/development.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack/environment.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack/environment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/partials/_user-panel.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/partials/_user-panel.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,9 +14,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="ERB File" />
         <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="ERB File" />
       </list>
     </option>
   </component>
@@ -58,21 +46,23 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/assets/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views/posts" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Coding\RailsWebApp\GamingBlog\app\views\posts" />
       <recent name="E:\Coding\RailsWebApp\GamingBlog\app\assets\images" />
       <recent name="E:\Coding\RailsWebApp\GamingBlog" />
       <recent name="E:\Coding\RailsWebApp\GamingBlog\app\views\blog" />
       <recent name="E:\Coding\RailsWebApp\GamingBlog\app\views\layouts" />
-      <recent name="E:\Coding\RailsWebApp\GamingBlog\app\javascript" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Coding\RailsWebApp\GamingBlog\app\views\partials" />
       <recent name="E:\Coding\RailsWebApp\GamingBlog\app\assets\images\fallback" />
       <recent name="E:\Coding\RailsWebApp\GamingBlog\config\webpack" />
     </key>
@@ -184,6 +174,9 @@
       <workItem from="1589832363623" duration="8669000" />
       <workItem from="1589903045225" duration="18494000" />
       <workItem from="1590403000061" duration="24560000" />
+      <workItem from="1590451123065" duration="1879000" />
+      <workItem from="1590484356377" duration="15071000" />
+      <workItem from="1590505929537" duration="11293000" />
     </task>
     <servers />
   </component>
@@ -191,44 +184,48 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="731" y="366" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589807417806">
+    <state x="731" y="366" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590490027670">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state x="731" y="366" key="#com.intellij.fileTypes.FileTypeChooser/0.46.1920.1034@0.46.1920.1034" timestamp="1589807417806" />
-    <state width="1877" height="270" key="GridCell.Tab.0.bottom" timestamp="1590433588230">
+    <state x="731" y="366" key="#com.intellij.fileTypes.FileTypeChooser/0.46.1920.1034@0.46.1920.1034" timestamp="1590490027670" />
+    <state width="938" height="269" key="GridCell.Tab.0.bottom" timestamp="1590507429887">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1877" height="270" key="GridCell.Tab.0.bottom/0.46.1920.1034@0.46.1920.1034" timestamp="1590433588230" />
-    <state width="1877" height="270" key="GridCell.Tab.0.center" timestamp="1590433588230">
+    <state width="938" height="269" key="GridCell.Tab.0.bottom/0.46.1920.1034@0.46.1920.1034" timestamp="1590507429887" />
+    <state width="938" height="269" key="GridCell.Tab.0.center" timestamp="1590507429887">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1877" height="270" key="GridCell.Tab.0.center/0.46.1920.1034@0.46.1920.1034" timestamp="1590433588230" />
-    <state width="1877" height="270" key="GridCell.Tab.0.left" timestamp="1590433588230">
+    <state width="938" height="269" key="GridCell.Tab.0.center/0.46.1920.1034@0.46.1920.1034" timestamp="1590507429887" />
+    <state width="938" height="269" key="GridCell.Tab.0.left" timestamp="1590507429887">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1877" height="270" key="GridCell.Tab.0.left/0.46.1920.1034@0.46.1920.1034" timestamp="1590433588230" />
-    <state width="1877" height="270" key="GridCell.Tab.0.right" timestamp="1590433588230">
+    <state width="938" height="269" key="GridCell.Tab.0.left/0.46.1920.1034@0.46.1920.1034" timestamp="1590507429887" />
+    <state width="938" height="269" key="GridCell.Tab.0.right" timestamp="1590507429887">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1877" height="270" key="GridCell.Tab.0.right/0.46.1920.1034@0.46.1920.1034" timestamp="1590433588230" />
-    <state width="1877" height="270" key="GridCell.Tab.1.bottom" timestamp="1590433588231">
+    <state width="938" height="269" key="GridCell.Tab.0.right/0.46.1920.1034@0.46.1920.1034" timestamp="1590507429887" />
+    <state width="938" height="269" key="GridCell.Tab.1.bottom" timestamp="1590507429888">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1877" height="270" key="GridCell.Tab.1.bottom/0.46.1920.1034@0.46.1920.1034" timestamp="1590433588231" />
-    <state width="1877" height="270" key="GridCell.Tab.1.center" timestamp="1590433588231">
+    <state width="938" height="269" key="GridCell.Tab.1.bottom/0.46.1920.1034@0.46.1920.1034" timestamp="1590507429888" />
+    <state width="938" height="269" key="GridCell.Tab.1.center" timestamp="1590507429887">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1877" height="270" key="GridCell.Tab.1.center/0.46.1920.1034@0.46.1920.1034" timestamp="1590433588231" />
-    <state width="1877" height="270" key="GridCell.Tab.1.left" timestamp="1590433588231">
+    <state width="938" height="269" key="GridCell.Tab.1.center/0.46.1920.1034@0.46.1920.1034" timestamp="1590507429887" />
+    <state width="938" height="269" key="GridCell.Tab.1.left" timestamp="1590507429887">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1877" height="270" key="GridCell.Tab.1.left/0.46.1920.1034@0.46.1920.1034" timestamp="1590433588231" />
-    <state width="1877" height="270" key="GridCell.Tab.1.right" timestamp="1590433588231">
+    <state width="938" height="269" key="GridCell.Tab.1.left/0.46.1920.1034@0.46.1920.1034" timestamp="1590507429887" />
+    <state width="938" height="269" key="GridCell.Tab.1.right" timestamp="1590507429887">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1877" height="270" key="GridCell.Tab.1.right/0.46.1920.1034@0.46.1920.1034" timestamp="1590433588231" />
+    <state width="938" height="269" key="GridCell.Tab.1.right/0.46.1920.1034@0.46.1920.1034" timestamp="1590507429887" />
+    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1590519273378">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.46.1920.1034@0.46.1920.1034" timestamp="1590519273378" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/GamingBlog@Development__GamingBlog.rcov" NAME="Development: GamingBlog Coverage Results" MODIFIED="1590426705069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="GamingBlog" />
+    <SUITE FILE_PATH="coverage/GamingBlog@Development__GamingBlog.rcov" NAME="Development: GamingBlog Coverage Results" MODIFIED="1590506844607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="GamingBlog" />
   </component>
 </project>
