@@ -12,7 +12,7 @@
           <ol class="breadcrumb text-white-50 m-0">
             <li class="breadcrumb-item"><%= link_to root_path, class: "underline text-white-50" do %><span>Home</span>
               <% end %></li>
-            <li class="breadcrumb-item" aria-current="page"><%= link_to posts_index_path, class: "underline text-white-50" do %><span>Admin</span>
+            <li class="breadcrumb-item" aria-current="page"><%= link_to posts_path, class: "underline text-white-50" do %><span>Admin</span>
               <% end %></li>
             <li class="breadcrumb-item" aria-current="page"><span>Create</span></li>
           </ol></nav>
@@ -34,7 +34,7 @@
 </section>
 
 <section class="container py-10">
-  <%= form_with model: @post, url: posts_create_path, html: { multipart: true } do |f| %>
+  <%= form_with model: @post, html: { multipart: true } do |f| %>
     <div class="form-group">
       <%= f.label :title %>
       <%= f.text_field :title, class: 'form-control' %>
@@ -60,7 +60,7 @@
       <%= f.submit 'Create', class: 'btn btn-primary w-100' %>
         </div>
         <div class="col-2">
-          <%= link_to "Go back", posts_index_path, class: "btn btn-secondary w-100" %>
+          <%= link_to "Go back", posts_path, class: "btn btn-secondary w-100" %>
         </div>
         </div>
     </div>
