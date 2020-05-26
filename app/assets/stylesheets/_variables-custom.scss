@@ -31,21 +31,14 @@ $gray-300: #dddddd;
 $gray-800: #555;
 $gray-900: #101010;
 
-$grays: ();
 
-$grays: map-merge(
-                (
+$grays: (
+
                         "100": $gray-100,
-                        "200": $gray-200,
                         "300": $gray-300,
-                        "400": $gray-400,
-                        "500": $gray-500,
-                        "600": $gray-600,
-                        "700": $gray-700,
                         "800": $gray-800,
                         "900": $gray-900
-                ),
-                $grays
+
 );
 
 $blue: #013A80;
@@ -55,26 +48,17 @@ $red: #E35D46;
 $yellow: #F5BE17;
 $green: #00635C;
 
-// stylelint-disable-next-line scss/dollar-variable-default
-$colors: ();
 
-$colors: map-merge(
-                (
+$colors: (
                         "blue": $blue,
-                        "indigo": $indigo,
                         "purple": $purple,
                         "pink": $pink,
                         "red": $red,
-                        "orange": $orange,
                         "yellow": $yellow,
                         "green": $green,
-                        "teal": $teal,
-                        "cyan": $cyan,
-                        "white": $white,
                         "gray": $gray-600,
                         "gray-dark": $gray-900
-                ),
-                $colors
+
 );
 
 $primary: #4F944F;
@@ -84,20 +68,12 @@ $dark: $gray-900;
 $light: #efefef;
 
 // stylelint-disable-next-line scss/dollar-variable-default
-$theme-colors: ();
-
-$theme-colors: map-merge(
-                (
-                        "primary": $primary,
-                        "secondary": $secondary,
-                        "success": $success,
-                        "info": $info,
-                        "warning": $warning,
-                        "danger": $danger,
-                        "light": $light,
-                        "dark": $dark
-                ),
-                $theme-colors
+$theme-colors: (
+        "primary": $primary,
+        "secondary": $secondary,
+        "success": $success,
+        "dark": $dark,
+        "light": $light
 );
 
 // layout
@@ -117,10 +93,8 @@ $dropdown-link-active-color: $gray-800;
 $dropdown-link-hover-color: $gray-900;
 
 $spacer: 1rem;
-$spacers: ();
 
-$spacers: map-merge(
-                (
+$spacers: (
                         0: 0,
                         0_5: ($spacer * .3125),
                         1: ($spacer * .625),
@@ -138,8 +112,6 @@ $spacers: map-merge(
                         12: ($spacer * 7.5),
                         13: ($spacer * 8.125),
                         14: ($spacer * 8.75)
-                ),
-                $spacers
 );
 
 $font-size-list: (12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 50, 60, 70, 80, 90, 100);
@@ -219,6 +191,7 @@ $input-height-sm:                       add($input-line-height-sm * 1em, add($in
 $input-height-lg:                       add($input-line-height-lg * 1em, add($input-padding-y-lg * 2, $input-height-border, false));
 
 $input-focus-bg:                        transparent;
+$input-focus-border-color:              $primary;
 $input-focus-box-shadow: none;
 
 $input-bg:                              transparent;
@@ -262,6 +235,8 @@ $pagination-active-border-color:    $black;
 $pagination-disabled-color:         $border-color;
 $pagination-disabled-bg:            transparent;
 $pagination-disabled-border-color:  transparent;
+
+$custom-control-indicator-border-color: $border-color;
 
 // social colors
 $facebook: #3b5998;
