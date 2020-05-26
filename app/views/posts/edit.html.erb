@@ -1,2 +1,38 @@
-<h1>Posts#edit</h1>
-<p>Find me in app/views/posts/edit.html.erb</p>
+<% content_for :headScripts do %>
+  <%= javascript_pack_tag 'post_editor', 'data-turbolinks-track': 'reload' %>
+<% end %>
+
+<section class="jumbotron position-relative jumbotron-fluid pt-14 pb-6 bg-blue">
+  <%= image_tag 'decoration.png', class: 'decoration obj-position-center' %>
+  <div class="container">
+    <div class="row align-items-end row-gutter-2">
+      <div class="col text-white">
+        <h1 class="m-0 text-white">Edit post: <span class="d-inline-block align-top text-truncate"><%= @post.title %></span></h1>
+        <nav aria-label="breadcrumbs">
+          <ol class="breadcrumb text-white-50 m-0">
+            <li class="breadcrumb-item"><%= link_to root_path, class: "underline text-white-50" do %><span>Home</span>
+              <% end %></li>
+            <li class="breadcrumb-item" aria-current="page"><%= link_to posts_path, class: "underline text-white-50" do %><span>Admin</span>
+              <% end %></li>
+            <li class="breadcrumb-item" aria-current="page"><span>Edit</span></li>
+          </ol></nav>
+      </div>
+      <!--<div class="col-md-4 text-md-right">
+        <div role="group" class="btn-group btn-group-sm">
+          <div class="dropdown btn-group" role="group">
+            <button class="btn btn-outline-light btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="true" type="button">Sort</button>
+            <div role="menu" class="dropdown-menu shadow p-1_5">
+              <a role="presentation" class="underline dropdown-item" href="#">What&#39;s new?</a>
+              <a role="presentation" class="underline dropdown-item" href="#">Price high to low</a>
+              <a role="presentation" class="underline dropdown-item" href="#">Price low to high</a></div>
+          </div>
+          <button class="btn btn-outline-light btn-block" type="button">Filter</button>
+        </div>
+      </div>-->
+    </div>
+  </div>
+</section>
+
+<section class="container py-10">
+  <%= render 'layouts/post-form' %>
+</section>

@@ -605,7 +605,7 @@ body {
   }
 }
 
-a.border{
+.post.border{
   @include transition(border-color 0.2s);
   &:hover {
     border-color: $gray-900 !important;
@@ -660,7 +660,7 @@ a.border{
   background-position: center 50%;
 }
 
-.decoration{
+.decoration.image-darken{
   @extend .decoration;
   opacity: 1;
 }
@@ -680,6 +680,25 @@ img.decoration {
     line-height: calc(1.5em + 1.875rem);
     text-align: center;
     border-radius: 0;
+  }
+}
+
+.post {
+  .control-links {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+}
+
+.tag {
+  position: absolute;
+  &.tag-bottom {
+    bottom: 0;
+  }
+  &.tag-right{
+    right: 0;
   }
 }
 

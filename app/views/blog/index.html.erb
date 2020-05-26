@@ -86,7 +86,7 @@
       <ul class="list-unstyled w-100">
         <% @posts.each do |post| %>
           <li class="mb-3">
-            <%= link_to post_path(params: {id: post.id}), class: "media border p-3" do %>
+            <%= link_to  (post), class: "media border p-3" do %>
               <div class="card-square m-n3 col-3 p-0 overflow-hidden">
               <%= image_tag post.thumb_img.url(id: post.id), class: 'card-content obj-fit-cover obj-position-center' %>
               </div>
@@ -105,7 +105,7 @@
         <button href="#!" class="btn btn-outline-secondary">All posts</button>
       </div>
       <div class="col-auto">
-        <%= link_to 'Create', posts_create_path, class: "btn btn-outline-secondary" %>
+        <%= link_to 'Create', new_post_path, class: "btn btn-outline-secondary" %>
       </div>
     </div>
   </div>
