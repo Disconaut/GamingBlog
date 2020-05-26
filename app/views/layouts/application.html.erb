@@ -10,7 +10,7 @@
   <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= content_for?(:styles) ? yield(:styles) : '' %>
   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  <%= content_for?(:headScripts) ? yield(:scripts) : '' %>
+  <%= content_for?(:headScripts) ? yield(:headScripts) : '' %>
 </head>
 
 <body>

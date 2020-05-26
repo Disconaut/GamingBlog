@@ -24,6 +24,6 @@ class PostsController < ApplicationController
 
   private
   def post_attr
-    params.require(:post).permit(:title, :content, :image)
+    params.require(:post).permit(:title, :content, :thumb_img, :header_img)
   end
 end

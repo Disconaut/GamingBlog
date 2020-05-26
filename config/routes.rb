@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  post 'image/upload'
+  post 'image/delete'
   get 'posts/index'
   get 'posts/create'
   post 'posts/create'
