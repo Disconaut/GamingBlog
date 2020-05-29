@@ -1,0 +1,38 @@
+<div class="modal fade" id="avatarModal" tabindex="-1" role="dialog" aria-labelledby="avatarModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content rounded-0">
+      <div class="modal-header">
+        <h5 class="modal-title" id="avatarModalLabel">Change avatar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <%= form_for(current_user, url: user_avatar_edit_path, html: {multipart: true, method: :put}) do |f| %>
+          <div class="card-square position-relative mb-1_5">
+          <%= image_tag current_user.avatar.url, class: "card-content w-100 h-100 obj-fit-cover obj-fit-center", id: 'avatarPreview' %>
+          </div>
+          <div class="form-group">
+            <div class="custom-file">
+              <%= f.label :avatar, class: "custom-file-label" %>
+              <%= f.file_field :avatar, class: "custom-file-input", 'data-toggle': 'img-preview', 'data-target': '#avatarPreview' %>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="row justify-content-end">
+              <div class="col-lg-3 col-sm-6 mb-1 mb-sm-0">
+                <%= f.submit 'Set avatar', class: 'btn btn-primary w-100' %>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <button type="button" class="btn btn-secondary w-100" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= javascript_pack_tag 'image_preload', 'data-turbolinks-track': 'reload' %>
+
