@@ -134,6 +134,11 @@
     </div>
   </div>
 </footer>
+
+<% if user_signed_in? %>
+  <%= render 'partials/avatar-modal' %>
+<% end %>
+
 <p class="position-absolute notice"><%= notice %></p>
 <p class="position-absolute alert"><%= alert %></p>
 

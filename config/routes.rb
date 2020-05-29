@@ -10,13 +10,6 @@ Rails.application.routes.draw do
   get 'users/profile'
   post 'image/upload'
   post 'image/delete'
-  # get 'posts/index'
-  # get 'posts/create'
-  # post 'posts/create'
-  # get 'posts/edit'
-  # patch 'posts/edit'
-  # delete 'posts/destroy'
-  # root  'blog#index'
   resources :posts
   resources :posts do
     resources :comments
@@ -27,6 +20,6 @@ Rails.application.routes.draw do
   root 'blog#index'
   get 'blog/(:type)', to: 'blog#posts'
   get 'blog/post/:id', to: 'blog#post'
-  get 'users/profile', as: 'user_root'
+  put 'users/change_avatar', to: 'users#update_avatar', as: 'user_avatar_edit'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
