@@ -15,7 +15,7 @@ class PostsController < ApplicationController
   end
 
   def all
-
+    @posts = Post.page params[:page]
   end
 
   def create

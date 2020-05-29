@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3580cb4c-d39c-4263-8140-ba6f2da6d4dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/posts/all.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/all.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +17,8 @@
       <list>
         <option value="SCSS File" />
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="ERB File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -193,44 +195,44 @@
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
     <state x="731" y="366" key="#com.intellij.fileTypes.FileTypeChooser/0.46.1920.1034@0.46.1920.1034" timestamp="1590490027670" />
-    <state width="938" height="269" key="GridCell.Tab.0.bottom" timestamp="1590782837813">
+    <state width="938" height="269" key="GridCell.Tab.0.bottom" timestamp="1590793731327">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="938" height="269" key="GridCell.Tab.0.bottom/0.46.1920.1034@0.46.1920.1034" timestamp="1590782837813" />
-    <state width="938" height="269" key="GridCell.Tab.0.center" timestamp="1590782837813">
+    <state width="938" height="269" key="GridCell.Tab.0.bottom/0.46.1920.1034@0.46.1920.1034" timestamp="1590793731327" />
+    <state width="938" height="269" key="GridCell.Tab.0.center" timestamp="1590793731327">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="938" height="269" key="GridCell.Tab.0.center/0.46.1920.1034@0.46.1920.1034" timestamp="1590782837813" />
-    <state width="938" height="269" key="GridCell.Tab.0.left" timestamp="1590782837813">
+    <state width="938" height="269" key="GridCell.Tab.0.center/0.46.1920.1034@0.46.1920.1034" timestamp="1590793731327" />
+    <state width="938" height="269" key="GridCell.Tab.0.left" timestamp="1590793731326">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="938" height="269" key="GridCell.Tab.0.left/0.46.1920.1034@0.46.1920.1034" timestamp="1590782837813" />
-    <state width="938" height="269" key="GridCell.Tab.0.right" timestamp="1590782837813">
+    <state width="938" height="269" key="GridCell.Tab.0.left/0.46.1920.1034@0.46.1920.1034" timestamp="1590793731326" />
+    <state width="938" height="269" key="GridCell.Tab.0.right" timestamp="1590793731327">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="938" height="269" key="GridCell.Tab.0.right/0.46.1920.1034@0.46.1920.1034" timestamp="1590782837813" />
-    <state width="938" height="269" key="GridCell.Tab.1.bottom" timestamp="1590782837813">
+    <state width="938" height="269" key="GridCell.Tab.0.right/0.46.1920.1034@0.46.1920.1034" timestamp="1590793731327" />
+    <state width="938" height="269" key="GridCell.Tab.1.bottom" timestamp="1590793731327">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="938" height="269" key="GridCell.Tab.1.bottom/0.46.1920.1034@0.46.1920.1034" timestamp="1590782837813" />
-    <state width="938" height="269" key="GridCell.Tab.1.center" timestamp="1590782837813">
+    <state width="938" height="269" key="GridCell.Tab.1.bottom/0.46.1920.1034@0.46.1920.1034" timestamp="1590793731327" />
+    <state width="938" height="269" key="GridCell.Tab.1.center" timestamp="1590793731327">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="938" height="269" key="GridCell.Tab.1.center/0.46.1920.1034@0.46.1920.1034" timestamp="1590782837813" />
-    <state width="938" height="269" key="GridCell.Tab.1.left" timestamp="1590782837813">
+    <state width="938" height="269" key="GridCell.Tab.1.center/0.46.1920.1034@0.46.1920.1034" timestamp="1590793731327" />
+    <state width="938" height="269" key="GridCell.Tab.1.left" timestamp="1590793731327">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="938" height="269" key="GridCell.Tab.1.left/0.46.1920.1034@0.46.1920.1034" timestamp="1590782837813" />
-    <state width="938" height="269" key="GridCell.Tab.1.right" timestamp="1590782837813">
+    <state width="938" height="269" key="GridCell.Tab.1.left/0.46.1920.1034@0.46.1920.1034" timestamp="1590793731327" />
+    <state width="938" height="269" key="GridCell.Tab.1.right" timestamp="1590793731327">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="938" height="269" key="GridCell.Tab.1.right/0.46.1920.1034@0.46.1920.1034" timestamp="1590782837813" />
+    <state width="938" height="269" key="GridCell.Tab.1.right/0.46.1920.1034@0.46.1920.1034" timestamp="1590793731327" />
     <state x="623" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1590779289237">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
     <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.46.1920.1034@0.46.1920.1034" timestamp="1590779289237" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/GamingBlog@Development__GamingBlog.rcov" NAME="Development: GamingBlog Coverage Results" MODIFIED="1590773885696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="GamingBlog" />
+    <SUITE FILE_PATH="coverage/GamingBlog@Development__GamingBlog.rcov" NAME="Development: GamingBlog Coverage Results" MODIFIED="1590793731313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="GamingBlog" />
   </component>
 </project>

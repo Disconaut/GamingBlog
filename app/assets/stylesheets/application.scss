@@ -73,8 +73,12 @@
   @include transition(opacity 0.4s ease, transform 0.4s ease, background-color 0.4s ease);
 }
 
-body:not(.collapse-show):not(.product-page) > .header-top {
+body:not(.collapse-show):not(.black-header) > .header-top {
   background-color: transparent !important;
+}
+
+.breadcrumb-item a {
+  color: $gray-800;
 }
 
 .navbar-nav .nav-link {
@@ -324,6 +328,7 @@ body:not(.collapse-show):not(.product-page) > .header-top {
 }
 
 %card-rectangle {
+  position: relative;
   &::before {
     display: block;
     content: "";
@@ -355,6 +360,13 @@ body:not(.collapse-show):not(.product-page) > .header-top {
   }
 }
 
+.card-rect150 {
+  @extend %card-rectangle;
+  &::before{
+    padding-top: 150%;
+  }
+}
+
 #categories .card {
   overflow: hidden;
 
@@ -365,6 +377,13 @@ body:not(.collapse-show):not(.product-page) > .header-top {
     top: 50%;
     bottom: auto;
   }
+
+
+}
+
+
+.card-scale {
+  overflow: hidden;
 
   > .card-img {
     -webkit-transition: all 0.2s;
@@ -414,6 +433,13 @@ body:not(.collapse-show):not(.product-page) > .header-top {
   }
 
 }
+
+.post-card-title {
+  font-size: 1.625rem !important;
+  line-height: 1.4em;
+}
+
+
 
 .btn:not(.btn-link) {
   text-transform: uppercase;

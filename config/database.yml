@@ -58,6 +58,8 @@ development:
 test:
   <<: *default
   database: GamingBlog_test
+  username: postgres
+  password: t4586E557Ch
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -75,12 +77,12 @@ test:
 #
 # You can use this database configuration with:
 #
-#   production:
-#     url: <%= ENV['DATABASE_URL'] %>
-#
 production:
-  <<: *default
-  database: d8u5p7fmjo5vg4
-  username: iahjapmicydlzq
-  password: <%= ENV['GAMINGBLOG_DATABASE_PASSWORD'] %>
-  host: ec2-54-75-246-118.eu-west-1.compute.amazonaws.com
+  url: <%= ENV['DATABASE_URL'] %>
+#
+#production:
+#  <<: *default
+#  database: GamingBlog_production
+#  username: GamingBlog
+#  password: <%#= ENV['GAMINGBLOG_DATABASE_PASSWORD'] %>
+
