@@ -1,13 +1,8 @@
 class PostsController < ApplicationController
   before_action :authenticate_admin!, except: %w(index show all)
 
-  def initialize
-    @posts_per_page = 10
-    super
-  end
-
   def index
-    @posts = Post.order(created_at: :desc).all.limit(5)
+    @posts = Post.order(created_at: :desc).all.limit(6)
   end
 
   def show
