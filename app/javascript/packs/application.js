@@ -9,6 +9,7 @@ require("@rails/activestorage").start();
 require("channels");
 
 import('../src/plugins');
+import '../packs/posts_list';
 import "@fortawesome/fontawesome-free/js/all"
 
 $(document).on('ready turbolinks:load', function(){
