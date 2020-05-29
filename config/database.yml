@@ -85,3 +85,4 @@ production:
 #  database: GamingBlog_production
 #  username: GamingBlog
 #  password: <%#= ENV['GAMINGBLOG_DATABASE_PASSWORD'] %>
+
