@@ -1,0 +1,30 @@
+<li class="media">
+  <div class="media-body">
+    <h5><%= comment.user.email %></h5>
+    <p><%= comment.body %></p>
+    <small class="text-muted">Submitted <%= time_ago_in_words(comment.created_at) %> ago</small>
+    <a class="btn btn-link" role="button" data-toggle="collapse" href="#replyCollapse<%= comment.id %>" aria-expanded="false" aria-controls="replyCollapse<%= comment.id %>" data-turbolinks="false">
+      <small><%= comment.comments.count %> replies</small></a>
+    <div class="collapse" id="replyCollapse<%= comment.id %>">
+      <div class="row">
+        <div class="col">
+          <%= form_for [comment, Comment.new] do |f| %>
+            <div class="form-group">
+              <%= f.text_area :body, placeholder: "Add a Reply", class: "form-control" %>
+            </div>
+            <div class="form-group">
+              <div class="row justify-content-end">
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                  <%= f.submit "Reply", class: "btn btn-outline-info w-100" %>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+      <ul class="list-unstyled">
+        <%= render partial: 'comments/comment', collection: comment.comments %>
+      </ul>
+    </div>
+  </div>
+</li>
