@@ -32,17 +32,12 @@
             <%= link_to "Home", root_path, class: "nav-link", id: "homeLink" %>
           </li>
           <li class="nav-item dropdown">
-            <%= link_to "Pages", "#!", class: "nav-link dropdown-toggle", id: "navbarDropdown",
+            <%= link_to "Posts", "#!", class: "nav-link dropdown-toggle", id: "navbarDropdown",
                         role: "button", "data-toggle": "dropdown", "aria-haspopup": "true", "aria-expanded": "false",
                         "data-turbolinks": "false" %>
             <div class="dropdown-menu shadow" aria-labelledby="navbarDropdown">
-
+              <%= link_to 'All', posts_all_path, class: 'dropdown-item underline' %>
             </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="documentation/index.html">
-              Docs
-            </a>
           </li>
         </ul>
       </div>
@@ -53,12 +48,6 @@
           <li class="nav-item">
             <a data-toggle="modal" data-target="#search" class="nav-link">
               <%= fa_icon "search" %>
-            </a>
-          </li>
-          <li class="nav-item cart">
-            <a data-toggle="modal" data-target="#cart" class="nav-link d-flex align-items-center rounded-0">
-              <span class="px-1 py-0_5 border border-right-0">Cart</span>
-              <span class="px-1 py-0_5 border">2</span>
             </a>
           </li>
         </ul>
