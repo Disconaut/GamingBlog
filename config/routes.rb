@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   delete 'image/delete'
 
   root 'posts#index'
-  get 'posts', to: 'posts#all', as: :posts_all_path
+  get 'posts', to: 'posts#all', as: :posts_all
   resources :posts, except: [:index]
 
   resources :posts do

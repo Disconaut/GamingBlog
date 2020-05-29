@@ -46,8 +46,9 @@
     <h2 class="text-capitalize text-center mb-4">Latest posts</h2>
     <div class="masonry row-gutter-1 mb-4">
       <% @posts.each_with_index do |post, index| %>
+        <%= card_class = ([0, 2, 3].include? index)?'card-rect150':'card-square' %>
         <div class="col-md-6 col-lg-4">
-          <a class="card card-scale <%= ([0, 2, 3].include? index)?'card-rect150':'card-square' %> text-white">
+          <%= link_to post_path(post), class: "card card-scale #{card_class} text-white" do %>
             <%= image_tag post.thumb_img.url, class: "card-content card-img image-darken obj-fit-cover" %>
             <div class="darker"></div>
             <div class="card-img-overlay">
@@ -56,13 +57,13 @@
                 <h3 class="card-title w-75 post-card-title text-white"><%= post.title %></h3>
               </div>
             </div>
-          </a>
+          <% end %>
         </div>
       <% end %>
     </div>
     <div class="row justify-content-center">
       <div class="col-auto">
-        <button href="#!" class="btn btn-outline-secondary">All posts</button>
+        <%= link_to 'All posts', posts_all_path, class: 'btn btn-outline-secondary' %>
       </div>
       <div class="col-auto">
         <%= link_to 'Create', new_post_path, class: "btn btn-outline-secondary" %>
