@@ -12,7 +12,6 @@ import('../src/plugins');
 import "@fortawesome/fontawesome-free/js/all"
 
 $(document).on('ready turbolinks:load', function(){
-    console.log($(".custom-file-input"));
     $(".custom-file-input").on("change", function() {
         console.log("hello");
         let fileName = $(this).val().split("\\").pop();
