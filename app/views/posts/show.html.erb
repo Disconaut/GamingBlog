@@ -1,3 +1,7 @@
+<% content_for :headScripts do %>
+  <%= javascript_pack_tag 'comment_editor', 'data-turbolinks-track': 'reload' %>
+<% end %>
+
 <section class="jumbotron position-relative jumbotron-fluid pt-14 pb-6 bg-blue">
   <% if !@post.header_img? %>
     <%= image_tag 'decoration.png', class: 'decoration obj-position-center' %>
