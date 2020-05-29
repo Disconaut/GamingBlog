@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :authenticate_admin!, except: ['show']
+  before_action :authenticate_admin!, except: %w(index show all)
 
   def initialize
     @posts_per_page = 10
@@ -7,16 +7,15 @@ class PostsController < ApplicationController
   end
 
   def index
-    if params.has_key? :page
-      (page = params[:page])
-    else
-      page = 1
-    end
-    @posts = Post.offset((page - 1) * @posts_per_page).limit(@posts_per_page)
+    @posts = Post.order(created_at: :desc).all.limit(5)
   end
 
   def show
     @post = Post.find(params[:id])
+  end
+
+  def all
+
   end
 
   def create
