@@ -15,7 +15,7 @@ class PostsController < ApplicationController
   end
 
   def all
-    @posts = Post.page 1 #(params.has_key?(:page)?params[:page]:1)
+    @posts = Post.page params[:page]
   end
 
   def create
