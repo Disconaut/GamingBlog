@@ -5,11 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+user = User.find_by("email = 'admin@omela.com'")
 
+  # user = User.new
+  # user.username = "Admin"
+  # user.email = 'admin@omela.com'
+  # user.owner = true
+  # user.password = 't4586E557Ch'
+  # user.password_confirmation = 't4586E557Ch'
+  # user.save!
 
-user = User.new
-user.email = 'admin@omela.com'
-user.owner = true
-user.password = 't4586E557Ch'
-user.password_confirmation = 't4586E557Ch'
-user.save!
+  user.username = "Admin"

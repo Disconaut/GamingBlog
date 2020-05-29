@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :authenticate_admin!
+  before_action :authenticate_admin!, except: ['show']
 
   def initialize
     @posts_per_page = 10

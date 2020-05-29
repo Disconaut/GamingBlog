@@ -1,0 +1,44 @@
+<li class="media mb-2 mt-1">
+  <%= image_tag comment.user.avatar.url, class: 'mr-5 obj-fit-cover obj-position-center', height: 64, width: 64 %>
+  <div class="media-body">
+    <div class="row justify-content-between">
+      <div class="col-auto">
+        <h6 class="mt-0"><%= comment.user.username %></h6>
+      </div>
+      <div class="col-auto">
+        <small class="text-muted">Submitted <%= time_ago_in_words(comment.created_at) %> ago</small>
+      </div>
+    </div>
+    <p><%= comment.body %></p>
+    <a class="" role="button" data-toggle="collapse" href="#replyCollapse<%= comment.id %>" aria-expanded="false" aria-controls="replyCollapse<%= comment.id %>" data-turbolinks="false">
+      <small><%= comment.comments.count %> replies</small></a>
+    <div class="collapse mt-1" id="replyCollapse<%= comment.id %>">
+      <% if user_signed_in? %>
+        <div class="row">
+          <div class="col">
+            <%= form_for [comment, Comment.new] do |f| %>
+              <div class="form-group">
+                <div class="media">
+                  <%= image_tag current_user.avatar.url, class: 'mr-5 obj-fit-cover obj-position-center', height: 64, width: 64 %>
+                  <div class="media-body">
+                    <%= f.text_area :body, placeholder: "Add a Reply", class: "form-control" %>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="row justify-content-end">
+                  <div class="col-lg-2 col-md-3 col-sm-6">
+                    <%= f.submit "Reply", class: "btn btn-outline-info w-100" %>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+      <ul class="list-unstyled">
+        <%= render partial: 'partials/comment', collection: comment.comments %>
+      </ul>
+    </div>
+  </div>
+</li>
