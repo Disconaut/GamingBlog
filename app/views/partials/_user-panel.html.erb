@@ -1,6 +1,6 @@
 <% if user_signed_in? %>
   <li class="nav-item dropdown">
-    <%= link_to current_user.email, "#!", class: "nav-link dropdown-toggle", id: "userPanel",
+    <%= link_to current_user.username, "#!", class: "nav-link dropdown-toggle", id: "userPanel",
                 role: "button", "data-toggle": "dropdown", "aria-haspopup": "true", "aria-expanded": "false",
                 "data-turbolinks": "false" %>
     <div class="dropdown-menu shadow p-1_5" aria-labelledby="userPanel">

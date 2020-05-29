@@ -1,10 +1,5 @@
 class CommentsController < ApplicationController
   before_action :find_commentable
-  def index
-  end
-
-  def show
-  end
 
   def new
     @comment = Comment.new
@@ -19,15 +14,6 @@ class CommentsController < ApplicationController
     else
       redirect_back fallback_location: root_path, notice: "Your comment wasn't posted!"
     end
-  end
-
-  def edit
-  end
-
-  def update
-  end
-
-  def destroy
   end
 
   private

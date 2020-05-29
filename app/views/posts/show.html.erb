@@ -32,34 +32,43 @@
   <%= @post.content.html_safe %>
 </section>
 
-<section class="container">
+<section class="container py-10">
   <button class="btn btn-info collapsed w-100" type="button" data-toggle="collapse" data-target="#commentsCollapse" aria-expanded="false" aria-controls="commentsCollapse"><%= @post.comments.count %>
     Comments
   </button>
   <div class="collapse py-3" id="commentsCollapse">
     <div class="row">
       <div class="col">
-        <%= form_for [@post, Comment.new] do |f| %>
-          <div class="form-group">
-            <%= f.text_area :body, placeholder: "Add a comment", class: "form-control" %>
-          </div>
-          <div class="form-group">
-            <div class="row justify-content-end">
-              <div class="col-lg-2 col-md-3 col-sm-6">
-                <%= f.submit "Add Comment", class: "btn btn-outline-info w-100" %>
+        <% if user_signed_in? %>
+          <%= form_for [@post, Comment.new] do |f| %>
+            <div class="form-group">
+              <div class="media">
+                <%= image_tag current_user.avatar.url, class: 'mr-5 obj-fit-cover obj-position-center', height: 64, width: 64 %>
+                <div class="media-body">
+                  <%= f.text_area :body, placeholder: "Add a Comment", class: "form-control" %>
+                </div>
               </div>
             </div>
-          </div>
+            <div class="form-group">
+              <div class="row justify-content-end">
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                  <%= f.submit "Add Comment", class: "btn btn-outline-info w-100" %>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        <% else %>
+          <p class="display-4 text-center">You must sign in to comment posts</p>
         <% end %>
       </div>
     </div>
 
-  <div class="row">
-    <div class="col">
-      <ul class="list-unstyled">
-        <%= render(partial: 'comments/comment', collection: @post.comments.order(created_at: :desc)) %>
-      </ul>
+    <div class="row">
+      <div class="col">
+        <ul class="list-unstyled">
+          <%= render(partial: 'partials/comment', collection: @post.comments.order(created_at: :desc)) %>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
 </section>
