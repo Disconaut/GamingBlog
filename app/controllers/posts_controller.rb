@@ -12,10 +12,10 @@ class PostsController < ApplicationController
   def all
     if params.has_key? :category
       @category = params[:category]
-      @posts = Post.where("category = '#{@category}'").page params[:page]
+      @posts = Post.order(created_at: :desc).where("category = '#{@category}'").page params[:page]
     else
       @category = "All posts"
-      @posts = Post.page params[:page]
+      @posts = Post.order(created_at: :desc).page params[:page]
     end
   end
 

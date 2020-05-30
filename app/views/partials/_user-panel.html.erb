@@ -4,6 +4,9 @@
                 role: "button", "data-toggle": "dropdown", "aria-haspopup": "true", "aria-expanded": "false",
                 "data-turbolinks": "false" %>
     <div class="dropdown-menu shadow p-1_5" aria-labelledby="userPanel">
+      <% if current_user.owner %>
+        <%= link_to 'Create post', new_post_path, class: 'dropdown-item underline' %>
+        <% end %>
       <a type="button" class="dropdown-item underline" data-toggle="modal" data-target="#avatarModal">Change avatar</a>
       <%= link_to 'Log out', destroy_user_session_path, :method => :delete, class: 'dropdown-item underline' %>
     </div>

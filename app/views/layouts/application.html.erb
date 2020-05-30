@@ -131,8 +131,8 @@
   <%= render 'partials/avatar-modal' %>
 <% end %>
 
-<p class="position-absolute notice"><%= notice %></p>
-<p class="position-absolute alert"><%= alert %></p>
+<p class="d-none notice"><%= notice %></p>
+<p class="d-none alert"><%= alert %></p>
 
 <%= javascript_pack_tag 'layout', 'data-turbolinks-track': 'reload' %>
 <%= content_for?(:bottomScripts) ? yield(:bottomScripts) : '' %>

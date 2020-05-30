@@ -11,10 +11,19 @@
   <% end %>
   <div class="container">
     <div class="row align-items-end row-gutter-2">
-      <div class="col text-white">
+      <div class="col-md-8 text-white">
         <h1 class="m-0 text-white"><%= @post.title %></h1>
-        <p>Created at: <%= @post.created_at %></p>
+        <p class="eyebrow text-uppercase"><%= @post.category %></p> <%= fas_icon 'circle', class: 'eyebrow mx-0_5', style: 'font-size: 0.575rem' %> <p class="eyebrow text-uppercase">Created at: <%= @post.created_at %></p>
       </div>
+      <% if user_signed_in? and current_user.owner %>
+        <div class="col-md-4 text-md-right">
+          <div class="btn-group btn-group-sm">
+            <%= link_to 'Edit', edit_post_path(@post), class: 'btn btn-outline-light' %>
+            <%= link_to 'Delete', post_path(@post),
+                        data: {:confirm => 'Are you sure?'}, :method => :delete, class: 'btn btn-danger' %>
+          </div>
+        </div>
+      <% end %>
     </div>
   </div>
 </section>

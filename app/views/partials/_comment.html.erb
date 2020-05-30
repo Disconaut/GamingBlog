@@ -12,7 +12,7 @@
     <div>
     <%= comment.body.html_safe %>
     </div>
-    <a class="" role="button" data-toggle="collapse" href="#replyCollapse<%= comment.id %>" aria-expanded="false" aria-controls="replyCollapse<%= comment.id %>" data-turbolinks="false">
+    <a class="link-primary  underline" role="button" data-toggle="collapse" href="#replyCollapse<%= comment.id %>" aria-expanded="false" aria-controls="replyCollapse<%= comment.id %>" data-turbolinks="false">
       <small><%= comment.comments.count %> replies</small></a>
     <div class="collapse mt-1" id="replyCollapse<%= comment.id %>">
       <% if user_signed_in? %>
