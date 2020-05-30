@@ -5,7 +5,7 @@
   <div class="container">
     <div class="row">
       <div class="col text-center">
-        <h1>All posts</h1>
+        <h1><%= @category.capitalize %></h1>
         <div class="row justify-content-center">
           <div class="col-auto">
             <nav aria-label="breadcrumb">
@@ -25,7 +25,7 @@
   <div class="container">
     <div class="masonry row-gutter-1">
       <% @posts.each_with_index do |post, index| %>
-        <%= card_class = ([0, 2, 3].include? index)?'card-rect150':'card-square' %>
+        <% card_class = ([0, 2, 3].include? index)?'card-rect150':'card-square' %>
         <div class="col-md-6 col-lg-4">
           <%= link_to post_path(post), class: "card card-scale #{card_class} text-white" do %>
             <%= image_tag post.thumb_img.url, class: "card-content card-img image-darken obj-fit-cover" %>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_29_165751) do
+ActiveRecord::Schema.define(version: 2020_05_30_000140) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,15 +25,8 @@ ActiveRecord::Schema.define(version: 2020_05_29_165751) do
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
-  create_table "posts", force: :cascade do |t|
-    t.string "title"
-    t.text "content"
-    t.json "thumb_img"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.json "header_img"
-    t.index ["title"], name: "index_posts_on_title", unique: true
-  end
+# Could not dump table "posts" because of following StandardError
+#   Unknown type 'post_category' for column 'category'
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false

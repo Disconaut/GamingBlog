@@ -46,7 +46,7 @@
     <h2 class="text-capitalize text-center mb-4">Latest posts</h2>
     <div class="masonry row-gutter-1 mb-4">
       <% @posts.each_with_index do |post, index| %>
-        <%= card_class = ([0, 2, 3].include? index)?'card-rect150':'card-square' %>
+        <% card_class = ([0, 2, 3].include? index)?'card-rect150':'card-square' %>
         <div class="col-md-6 col-lg-4">
           <%= link_to post_path(post), class: "card card-scale #{card_class} text-white" do %>
             <%= image_tag post.thumb_img.url, class: "card-content card-img image-darken obj-fit-cover" %>

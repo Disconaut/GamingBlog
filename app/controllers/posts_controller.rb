@@ -10,7 +10,13 @@ class PostsController < ApplicationController
   end
 
   def all
-    @posts = Post.page params[:page]
+    if params.has_key? :category
+      @category = params[:category]
+      @posts = Post.where("category = '#{@category}'").page params[:page]
+    else
+      @category = "All posts"
+      @posts = Post.page params[:page]
+    end
   end
 
   def create
@@ -48,6 +54,6 @@ class PostsController < ApplicationController
   private
 
   def post_attr
-    params.require(:post).permit(:title, :content, :thumb_img, :header_img)
+    params.require(:post).permit(:title, :content, :thumb_img, :header_img, :category)
   end
 end
