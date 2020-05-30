@@ -17,7 +17,6 @@ import 'tinymce/plugins/lists';
 import 'tinymce/plugins/advlist';
 import 'tinymce/plugins/nonbreaking';
 import 'tinymce/plugins/preview';
-import 'tinymce/plugins/save';
 import 'tinymce/plugins/searchreplace';
 import 'tinymce/plugins/visualblocks';
 import 'tinymce/plugins/wordcount';
@@ -43,7 +42,7 @@ $(document).on('ready turbolinks:load', function(){
             'fullscreen', 'help', 'hr',
             'imagetools', 'link', 'lists',
             'advlist', 'nonbreaking',
-            'preview', 'save', 'searchreplace',
+            'preview', 'searchreplace',
             'table', 'visualblocks', 'wordcount'],
         imagetools_cors_hosts: ['localhost'],
         autosave_interval: '30s',
@@ -52,9 +51,38 @@ $(document).on('ready turbolinks:load', function(){
         image_caption: true,
         relative_urls: false,
         images_upload_url: '../image/upload',
+        contextmenu: 'link image imagetools table spellchecker',
+        toolbar_mode: 'sliding',
+        toolbar: [
+            {
+                name: 'history', items: [ 'restoredraft', 'undo', 'redo']
+            },
+            {
+                name: 'styles', items: [ 'styleselect' ]
+            },
+            {
+                name: 'formatting', items: [ 'bold', 'italic', 'forecolor', 'backcolor' ]
+            },
+            {
+                name: 'alignment', items: [ 'alignleft', 'aligncenter', 'alignright', 'alignjustify', 'numlist', 'bullist' ]
+            },
+            {
+                name: 'indentation', items: [ 'outdent', 'indent' ]
+            },
+            {
+                name: 'specials', items: ['charmap', 'emoticons', 'hr']
+            },
+            {
+                name: 'images', items: ['image']
+            },
+            {
+                name: 'extras', items: ['visualblocks', 'preview']
+            }
+        ],
         mobile: {
             theme: 'mobile',
             plugins: ''
         }
     });
 });
+
