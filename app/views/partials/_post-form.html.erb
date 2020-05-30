@@ -1,7 +1,20 @@
-<%= form_with model: @post, html: {multipart: true} do |f| %>
+
+<%= form_with model: object, html: {multipart: true} do |f| %>
+  <% if object.errors.any? %>
+    <div class="form-group">
+      <h5 class="form-text text-danger"><%= pluralize(object.errors.count, "error") %> prohibited this article from being saved:</h5>
+
+      <ul>
+        <% object.errors.full_messages.each do |msg| %>
+          <li class="text-danger"><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
   <div class="form-group">
     <%= f.label :title %>
     <%= f.text_field :title, class: 'form-control' %>
+    <small class="text-muted form-text">Title length must be between 3 and 255.</small>
   </div>
   <div class="form-group">
     <%= f.label :category %>
@@ -9,9 +22,10 @@
   </div>
   <div class="form-group">
     <label>Images</label>
-    <div class="custom-file mb-2">
+    <div class="custom-file mb-5">
       <%= f.label :thumb_img, class: 'custom-file-label' %>
       <%= f.file_field :thumb_img, class: 'custom-file-input' %>
+      <small class="text-muted form-text">Thumb image is required.</small>
     </div>
     <div class="custom-file">
       <%= f.label :header_img, class: 'custom-file-label' %>
