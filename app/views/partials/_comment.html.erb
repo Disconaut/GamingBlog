@@ -9,8 +9,8 @@
         <small class="text-muted">Submitted <%= time_ago_in_words(comment.created_at) %> ago</small>
       </div>
     </div>
-    <div>
-    <%= comment.body.html_safe %>
+    <div class="tinymce">
+      <%= comment.body.html_safe %>
     </div>
     <a class="link-primary  underline" role="button" data-toggle="collapse" href="#replyCollapse<%= comment.id %>" aria-expanded="false" aria-controls="replyCollapse<%= comment.id %>" data-turbolinks="false">
       <small><%= comment.comments.count %> replies</small></a>
