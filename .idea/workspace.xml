@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3580cb4c-d39c-4263-8140-ba6f2da6d4dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controllers/registrations_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/shared/_error_messages.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/shared/_error_messages.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/registrations_controller.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/partials/_user-panel.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/partials/_user-panel.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/devise.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,24 +55,24 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/assets/images/fallback/avatar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views/devise/registrations" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Coding\RailsWebApp\GamingBlog\app\views\devise\registrations" />
+      <recent name="E:\Coding\RailsWebApp\GamingBlog\app\assets\images\fallback\avatar" />
+      <recent name="E:\Coding\RailsWebApp\GamingBlog\app\views\posts" />
+      <recent name="E:\Coding\RailsWebApp\GamingBlog\app\assets\images" />
+      <recent name="E:\Coding\RailsWebApp\GamingBlog" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Coding\RailsWebApp\GamingBlog\app\views\posts" />
       <recent name="E:\Coding\RailsWebApp\GamingBlog\app\views\partials" />
       <recent name="E:\Coding\RailsWebApp\GamingBlog\app\assets\images\fallback\avatar" />
       <recent name="E:\Coding\RailsWebApp\GamingBlog\app\assets\images\fallback" />
       <recent name="E:\Coding\RailsWebApp\GamingBlog\config\webpack" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Coding\RailsWebApp\GamingBlog\app\assets\images\fallback\avatar" />
-      <recent name="E:\Coding\RailsWebApp\GamingBlog\app\views\posts" />
-      <recent name="E:\Coding\RailsWebApp\GamingBlog\app\assets\images" />
-      <recent name="E:\Coding\RailsWebApp\GamingBlog" />
-      <recent name="E:\Coding\RailsWebApp\GamingBlog\app\views\blog" />
     </key>
   </component>
   <component name="RubyModuleManagerSettings">
@@ -94,9 +96,9 @@
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="127.0.0.1" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="0.0.0.0" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="default" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
       <method v="2" />
@@ -162,6 +164,12 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TESTOPTS" VALUE="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Rails.Development: GamingBlog" />
+      <item itemvalue="Rails.Production: GamingBlog" />
+      <item itemvalue="Rake.spec: GamingBlog" />
+      <item itemvalue="Rake.test: GamingBlog" />
+    </list>
   </component>
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
   <component name="SvnConfiguration">
@@ -187,6 +195,7 @@
       <workItem from="1590762367620" duration="1596000" />
       <workItem from="1590769788065" duration="3650000" />
       <workItem from="1590773708367" duration="1035000" />
+      <workItem from="1590843339148" duration="1267000" />
     </task>
     <servers />
   </component>
@@ -194,48 +203,52 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="414" y="218" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590843477081">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state x="414" y="218" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.46.1920.1034@0.46.1920.1034" timestamp="1590843477081" />
     <state x="731" y="366" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590490027670">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
     <state x="731" y="366" key="#com.intellij.fileTypes.FileTypeChooser/0.46.1920.1034@0.46.1920.1034" timestamp="1590490027670" />
-    <state width="1877" height="269" key="GridCell.Tab.0.bottom" timestamp="1590796103894">
+    <state width="1877" height="269" key="GridCell.Tab.0.bottom" timestamp="1590843665999">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.0.bottom/0.46.1920.1034@0.46.1920.1034" timestamp="1590796103894" />
-    <state width="1877" height="269" key="GridCell.Tab.0.center" timestamp="1590796103894">
+    <state width="1877" height="269" key="GridCell.Tab.0.bottom/0.46.1920.1034@0.46.1920.1034" timestamp="1590843665999" />
+    <state width="1877" height="269" key="GridCell.Tab.0.center" timestamp="1590843665998">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.0.center/0.46.1920.1034@0.46.1920.1034" timestamp="1590796103894" />
-    <state width="1877" height="269" key="GridCell.Tab.0.left" timestamp="1590796103894">
+    <state width="1877" height="269" key="GridCell.Tab.0.center/0.46.1920.1034@0.46.1920.1034" timestamp="1590843665998" />
+    <state width="1877" height="269" key="GridCell.Tab.0.left" timestamp="1590843665998">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.0.left/0.46.1920.1034@0.46.1920.1034" timestamp="1590796103894" />
-    <state width="1877" height="269" key="GridCell.Tab.0.right" timestamp="1590796103894">
+    <state width="1877" height="269" key="GridCell.Tab.0.left/0.46.1920.1034@0.46.1920.1034" timestamp="1590843665998" />
+    <state width="1877" height="269" key="GridCell.Tab.0.right" timestamp="1590843665999">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.0.right/0.46.1920.1034@0.46.1920.1034" timestamp="1590796103894" />
-    <state width="1877" height="269" key="GridCell.Tab.1.bottom" timestamp="1590796103894">
+    <state width="1877" height="269" key="GridCell.Tab.0.right/0.46.1920.1034@0.46.1920.1034" timestamp="1590843665999" />
+    <state width="1877" height="269" key="GridCell.Tab.1.bottom" timestamp="1590843666000">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.1.bottom/0.46.1920.1034@0.46.1920.1034" timestamp="1590796103894" />
-    <state width="1877" height="269" key="GridCell.Tab.1.center" timestamp="1590796103894">
+    <state width="1877" height="269" key="GridCell.Tab.1.bottom/0.46.1920.1034@0.46.1920.1034" timestamp="1590843666000" />
+    <state width="1877" height="269" key="GridCell.Tab.1.center" timestamp="1590843665999">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.1.center/0.46.1920.1034@0.46.1920.1034" timestamp="1590796103894" />
-    <state width="1877" height="269" key="GridCell.Tab.1.left" timestamp="1590796103894">
+    <state width="1877" height="269" key="GridCell.Tab.1.center/0.46.1920.1034@0.46.1920.1034" timestamp="1590843665999" />
+    <state width="1877" height="269" key="GridCell.Tab.1.left" timestamp="1590843665999">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.1.left/0.46.1920.1034@0.46.1920.1034" timestamp="1590796103894" />
-    <state width="1877" height="269" key="GridCell.Tab.1.right" timestamp="1590796103894">
+    <state width="1877" height="269" key="GridCell.Tab.1.left/0.46.1920.1034@0.46.1920.1034" timestamp="1590843665999" />
+    <state width="1877" height="269" key="GridCell.Tab.1.right" timestamp="1590843665999">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.1.right/0.46.1920.1034@0.46.1920.1034" timestamp="1590796103894" />
+    <state width="1877" height="269" key="GridCell.Tab.1.right/0.46.1920.1034@0.46.1920.1034" timestamp="1590843665999" />
     <state x="623" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1590779289237">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
     <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.46.1920.1034@0.46.1920.1034" timestamp="1590779289237" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/GamingBlog@Development__GamingBlog.rcov" NAME="Development: GamingBlog Coverage Results" MODIFIED="1590793731313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="GamingBlog" />
+    <SUITE FILE_PATH="coverage/GamingBlog@Development__GamingBlog.rcov" NAME="Development: GamingBlog Coverage Results" MODIFIED="1590843399241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="GamingBlog" />
   </component>
 </project>
