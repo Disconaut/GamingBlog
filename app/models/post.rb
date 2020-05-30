@@ -4,7 +4,7 @@ class Post < ApplicationRecord
   enum category: {news: 'news', reviews: 'reviews', others: 'others'}
   validates :category, inclusion: { in: categories.keys }
 
-  validates :title ,length: { minimum: 3, maximum: 255 }
+  validates :title ,length: { minimum: 3, maximum: 255 }, presence: true
   validates :thumb_img, presence: true
 
   has_many :comments, as: :commentable

@@ -1,10 +1,11 @@
-<%= form_with model: @post, html: {multipart: true} do |f| %>
-  <% if @post.errors.any? %>
-    <div id="form-group">
-      <h5 class="form-text text-danger"><%= pluralize(@post.errors.count, "error") %> prohibited this article from being saved:</h5>
+
+<%= form_with model: object, html: {multipart: true} do |f| %>
+  <% if object.errors.any? %>
+    <div class="form-group">
+      <h5 class="form-text text-danger"><%= pluralize(object.errors.count, "error") %> prohibited this article from being saved:</h5>
 
       <ul>
-        <% @post.errors.full_messages.each do |msg| %>
+        <% object.errors.full_messages.each do |msg| %>
           <li class="text-danger"><%= msg %></li>
         <% end %>
       </ul>
