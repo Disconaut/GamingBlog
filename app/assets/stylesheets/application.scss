@@ -31,6 +31,11 @@
   min-height: 80vh;
 }
 
+.vh-110{
+  min-height: 110vh;
+  height: 110vh;
+}
+
 @include media-breakpoint-up(md)
 .vh-md-100 {
   min-height: 100vh;
