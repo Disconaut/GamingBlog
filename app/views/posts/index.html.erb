@@ -6,7 +6,7 @@
       <div class="carousel-caption">
         <div class="col-lg-7 p-0 mx-auto">
           <h1 class="display-2 mb-2 text-white">Explore gaming world with Omela Blog</h1>
-          <a href="#" class="btn btn-outline-light text-uppercase">Posts</a>
+          <%= link_to 'Posts', posts_all_path, class: 'btn btn-outline-light text-uppercase' %>
         </div>
       </div>
     </div>
@@ -16,7 +16,7 @@
       <div class="carousel-caption">
         <div class="col-lg-7 p-0 mx-auto">
           <h1 class="display-2 mb-2 text-white">Latest news from gaming world</h1>
-          <a href="#" class="btn btn-outline-light text-uppercase">News</a>
+          <%= link_to 'News', posts_all_path(Post.categories[:news]), class: 'btn btn-outline-light text-uppercase' %>
         </div>
       </div>
     </div>
@@ -26,7 +26,7 @@
       <div class="carousel-caption">
         <div class="col-lg-7 p-0 mx-auto">
           <h1 class="display-2 mb-2 text-white">Reviews of the latest games</h1>
-          <a href="#" class="btn btn-outline-light text-uppercase">Reviews</a>
+          <%= link_to 'Reviews', posts_all_path(Post.categories[:reviews]), class: 'btn btn-outline-light text-uppercase' %>
         </div>
       </div>
     </div>

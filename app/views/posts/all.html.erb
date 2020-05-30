@@ -11,7 +11,7 @@
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><%= link_to 'Home', root_path, class: 'underline' %></li>
-                <li class="breadcrumb-item active" aria-current="page">All posts</li>
+                <li class="breadcrumb-item active" aria-current="page"><%= @category.capitalize %></li>
               </ol>
             </nav>
           </div>
@@ -32,7 +32,7 @@
             <div class="darker"></div>
             <div class="card-img-overlay">
               <div class="card-header">
-<!--                <span class="eyebrow text-white-50 text-uppercase mb-1">Category</span>-->
+                <span class="eyebrow text-white-50 text-uppercase mb-1"><%= post.category.capitalize if post.category != NIL %></span>
                 <h3 class="card-title w-75 post-card-title text-white"><%= post.title %></h3>
               </div>
             </div>
