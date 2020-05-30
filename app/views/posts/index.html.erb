@@ -72,9 +72,11 @@
       <div class="col-auto">
         <%= link_to 'All posts', posts_all_path, class: 'btn btn-outline-secondary' %>
       </div>
+      <% if user_signed_in? and current_user.owner %>
       <div class="col-auto">
         <%= link_to 'Create', new_post_path, class: "btn btn-outline-secondary" %>
       </div>
+        <% end %>
     </div>
   </div>
 </section>
