@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  devise_for :users
+  devise_for :users, { :registrations => 'registrations'}
 
   post 'image/upload'
   delete 'image/delete'
