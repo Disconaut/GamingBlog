@@ -5,13 +5,13 @@
   <div class="container">
     <div class="row">
       <div class="col text-center">
-        <h1>All posts</h1>
+        <h1><%= @category.capitalize %></h1>
         <div class="row justify-content-center">
           <div class="col-auto">
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><%= link_to 'Home', root_path, class: 'underline' %></li>
-                <li class="breadcrumb-item active" aria-current="page">All posts</li>
+                <li class="breadcrumb-item active" aria-current="page"><%= @category.capitalize %></li>
               </ol>
             </nav>
           </div>
@@ -25,14 +25,14 @@
   <div class="container">
     <div class="masonry row-gutter-1">
       <% @posts.each_with_index do |post, index| %>
-        <%= card_class = ([0, 2, 3].include? index)?'card-rect150':'card-square' %>
+        <% card_class = ([0, 2, 3].include? index)?'card-rect150':'card-square' %>
         <div class="col-md-6 col-lg-4">
           <%= link_to post_path(post), class: "card card-scale #{card_class} text-white" do %>
             <%= image_tag post.thumb_img.url, class: "card-content card-img image-darken obj-fit-cover" %>
             <div class="darker"></div>
             <div class="card-img-overlay">
               <div class="card-header">
-<!--                <span class="eyebrow text-white-50 text-uppercase mb-1">Category</span>-->
+                <span class="eyebrow text-white-50 text-uppercase mb-1"><%= post.category.capitalize if post.category != NIL %></span>
                 <h3 class="card-title w-75 post-card-title text-white"><%= post.title %></h3>
               </div>
             </div>

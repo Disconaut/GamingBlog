@@ -6,7 +6,7 @@
       <div class="carousel-caption">
         <div class="col-lg-7 p-0 mx-auto">
           <h1 class="display-2 mb-2 text-white">Explore gaming world with Omela Blog</h1>
-          <a href="#" class="btn btn-outline-light text-uppercase">Posts</a>
+          <%= link_to 'Posts', posts_all_path, class: 'btn btn-outline-light text-uppercase' %>
         </div>
       </div>
     </div>
@@ -16,7 +16,7 @@
       <div class="carousel-caption">
         <div class="col-lg-7 p-0 mx-auto">
           <h1 class="display-2 mb-2 text-white">Latest news from gaming world</h1>
-          <a href="#" class="btn btn-outline-light text-uppercase">News</a>
+          <%= link_to 'News', posts_all_path(Post.categories[:news]), class: 'btn btn-outline-light text-uppercase' %>
         </div>
       </div>
     </div>
@@ -26,7 +26,7 @@
       <div class="carousel-caption">
         <div class="col-lg-7 p-0 mx-auto">
           <h1 class="display-2 mb-2 text-white">Reviews of the latest games</h1>
-          <a href="#" class="btn btn-outline-light text-uppercase">Reviews</a>
+          <%= link_to 'Reviews', posts_all_path(Post.categories[:reviews]), class: 'btn btn-outline-light text-uppercase' %>
         </div>
       </div>
     </div>
@@ -46,14 +46,21 @@
     <h2 class="text-capitalize text-center mb-4">Latest posts</h2>
     <div class="masonry row-gutter-1 mb-4">
       <% @posts.each_with_index do |post, index| %>
-        <%= card_class = ([0, 2, 3].include? index)?'card-rect150':'card-square' %>
+        <% card_class = ([0, 2, 3].include? index) ? 'card-rect150' : 'card-square' %>
         <div class="col-md-6 col-lg-4">
           <%= link_to post_path(post), class: "card card-scale #{card_class} text-white" do %>
             <%= image_tag post.thumb_img.url, class: "card-content card-img image-darken obj-fit-cover" %>
             <div class="darker"></div>
             <div class="card-img-overlay">
               <div class="card-header">
-                <span class="eyebrow text-white-50 text-uppercase mb-1"><%= post.created_at %></span>
+                <div class="row justify-content-between">
+                  <div class="col-auto">
+                    <span class="eyebrow text-white-50 text-uppercase mb-1"><%= post.created_at %></span>
+                  </div>
+                  <div class="col-auto">
+                    <span class="eyebrow text-white-50 text-uppercase mb-1"><%= post.category %></span>
+                  </div>
+                </div>
                 <h3 class="card-title w-75 post-card-title text-white"><%= post.title %></h3>
               </div>
             </div>

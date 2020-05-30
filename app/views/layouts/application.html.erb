@@ -35,8 +35,11 @@
             <%= link_to "Posts", "#!", class: "nav-link dropdown-toggle", id: "navbarDropdown",
                         role: "button", "data-toggle": "dropdown", "aria-haspopup": "true", "aria-expanded": "false",
                         "data-turbolinks": "false" %>
-            <div class="dropdown-menu shadow" aria-labelledby="navbarDropdown">
+            <div class="dropdown-menu shadow p-1_5" aria-labelledby="navbarDropdown">
               <%= link_to 'All', posts_all_path, class: 'dropdown-item underline' %>
+              <% Post.categories.keys.each do |category| %>
+                <%= link_to category.capitalize, posts_all_path(category), class: 'dropdown-item underline' %>
+              <% end %>
             </div>
           </li>
         </ul>

@@ -381,6 +381,10 @@ body:not(.collapse-show):not(.black-header) > .header-top {
 
 }
 
+.custom-select > option {
+  text-transform: uppercase;
+}
+
 .card-img-overlay{
   background-color: transparent;
 }
