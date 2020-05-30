@@ -25,6 +25,7 @@
 @import "~@fortawesome/fontawesome-free";
 @import "hamburgers-custom";
 @import "~hamburgers/_sass/hamburgers/hamburgers";
+@import "tinymce";
 
 .vh-80 {
   height: 80vh;
@@ -669,7 +670,7 @@ footer {
 }
 
 body {
-  margin-bottom: 821px;
+  margin-bottom: 277px;
   color: $gray-800;
 }
 
@@ -780,7 +781,7 @@ img.decoration {
 
 @media(min-width: map-get($grid-breakpoints, "lg")) {
   body {
-    margin-bottom: 436px;
+    margin-bottom: 277px;
   }
   .navbar-nav .nav-item + .nav-item {
     margin-left: 30px;
