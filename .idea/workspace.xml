@@ -3,17 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3580cb4c-d39c-4263-8140-ba6f2da6d4dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/uploaders/avatar_uploader.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/uploaders/avatar_uploader.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/partials/_comment.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/partials/_comment.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/partials/_user-panel.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/partials/_user-panel.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/avatars/billg1_print.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/post/dassfghgfA/thumb_img/lenovo-laptop-legion-y730-15-feature-1.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,6 +189,7 @@
       <workItem from="1590762367620" duration="1596000" />
       <workItem from="1590769788065" duration="3650000" />
       <workItem from="1590773708367" duration="1035000" />
+      <workItem from="1590845594835" duration="1551000" />
     </task>
     <servers />
   </component>
@@ -252,6 +243,6 @@
     <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.46.1920.1034@0.46.1920.1034" timestamp="1590779289237" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/GamingBlog@Development__GamingBlog.rcov" NAME="Development: GamingBlog Coverage Results" MODIFIED="1590793731313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="GamingBlog" />
+    <SUITE FILE_PATH="coverage/GamingBlog@Development__GamingBlog.rcov" NAME="Development: GamingBlog Coverage Results" MODIFIED="1590845609556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="GamingBlog" />
   </component>
 </project>

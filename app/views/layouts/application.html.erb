@@ -63,65 +63,44 @@
 </main>
 <!-- footer -->
 <footer class="bg-dark text-white-50 py-0">
-  <div class="container">
-    <div class="row separated">
-      <div class="col-lg-6 py-10">
-        <div class="row mb-3">
-          <div class="col-md-8">
-            <p class="m-0">Thanks to <a href="https://www.opumo.com" class="text-white underline">Opumo</a> for the
-              product images used in this
-              demo theme. Head over to <a href="https://www.opumo.com" class="text-white underline">their store</a> to
-              get these
-              products.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-10">
-            <h4 class="eyebrow text-uppercase mb-2">Quick Links</h4>
-            <nav>
-              <ul class="nav font-size-sm row-cols-2 flex-wrap">
-                <li class="nav-item mb-1"><a class="text-white underline" href="about.html">About</a></li>
-                <li class="nav-item mb-1"><a class="text-white underline" href="contact.html">Contact Us</a></li>
-                <li class="nav-item mb-1"><a class="text-white underline" href="faq.html">FAQ</a></li>
-                <li class="nav-item mb-1"><a class="text-white underline" href="blog.html">Blog</a></li>
-                <li class="nav-item mb-1"><a class="text-white underline" href="text.html">Terms of Use</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-5 col-sm-4 col-md-3 mb-2">
+        <%= inline_svg_tag "logo.svg" %>
       </div>
-      <div class="col p-lg-0 separator"></div>
-      <div class="col-lg-6 py-10">
-        <div class="row justify-content-end mb-3">
-          <div class="col-lg-10">
-
-            <h4 class="eyebrow text-uppercase mb-2">Subscribe</h4>
-            <form>
-              <div class="input-group">
-                <input type="email" class="form-control form-control-lg" placeholder="Email" aria-label="Subscribe" aria-describedby="button-addon2">
-                <div class="input-group-append">
-                  <button class="btn btn-light" type="button" id="subscribeButton">Subscribe</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="row justify-content-end">
-          <div class="col-lg-10">
-            <h4 class="eyebrow text-uppercase mb-2">Follow us</h4>
-            <ul class="list-unstyled row">
-              <li class="col-auto">
-                <a class="text-white-50" href="#!"><%= fab_icon 'facebook-f' %></a>
-              </li>
-              <li class="col-auto">
-                <a class="text-white-50" href="#!"><%= fab_icon 'twitter' %></a>
-              </li>
-              <li class="col-auto">
-                <a class="text-white-50" href="#!"><%= fab_icon 'youtube' %></a>
-              </li>
-            </ul>
-          </div>
-        </div>
+    </div>
+    <div class="row justify-content-center mb-1">
+      <div class="col-auto">
+        <ul class="list-unstyled row">
+          <li class="col-auto">
+            <a class="text-white-50" href="#!"><%= fab_icon 'facebook-f' %></a>
+          </li>
+          <li class="col-auto">
+            <a class="text-white-50" href="#!"><%= fab_icon 'twitter' %></a>
+          </li>
+          <li class="col-auto">
+            <a class="text-white-50" href="#!"><%= fab_icon 'youtube' %></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-1">
+      <div class="col-auto">
+        <nav>
+          <ul class="nav list-inline">
+            <li class="list-inline-item nav-item">
+              <%= link_to 'All posts', posts_all_path, class: 'nav-link underline text-uppercase text-white-50 p-0' %></li>
+            <% Post.categories.keys.each do |category| %>
+              <li class="list-inline-item nav-item">
+                <%= link_to category, posts_all_path(category), class: 'nav-link text-uppercase underline text-white-50 p-0' %></li>
+            <% end %>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <small>© 2020 Omela Blog. Created by Oles Melanchuk PZ-24 Student</small>
       </div>
     </div>
   </div>
