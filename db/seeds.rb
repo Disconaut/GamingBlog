@@ -5,12 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-if User.find_by('email = "admin@omela.com"') == nil
+if User.find_by(:email => ENV['ADMIN_EMAIL']) == nil
   user = User.new
   user.username = "Admin"
-  user.email = 'admin@omela.com'
+  user.email = ENV['ADMIN_EMAIL']
   user.owner = true
-  user.password = 't4586E557Ch'
-  user.password_confirmation = 't4586E557Ch'
+  user.password = ENV['ADMIN_PASSWORD']
+  user.password_confirmation = ENV['ADMIN_PASSWORD']
   user.save!
 end
