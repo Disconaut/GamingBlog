@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3580cb4c-d39c-4263-8140-ba6f2da6d4dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/initializers/carrierwave.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/GamingBlog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GamingBlog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/packs/post_editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/packs/post_editor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/uploaders/avatar_uploader.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/uploaders/avatar_uploader.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/uploaders/image_uploader.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/uploaders/image_uploader.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/blog.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/comments.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/image.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/posts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/users.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,6 +197,7 @@
       <workItem from="1590769788065" duration="3650000" />
       <workItem from="1590773708367" duration="1035000" />
       <workItem from="1590845594835" duration="9264000" />
+      <workItem from="1590927590921" duration="843000" />
     </task>
     <servers />
   </component>
@@ -250,6 +251,6 @@
     <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.46.1920.1034@0.46.1920.1034" timestamp="1590779289237" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/GamingBlog@Development__GamingBlog.rcov" NAME="Development: GamingBlog Coverage Results" MODIFIED="1590924299938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="GamingBlog" />
+    <SUITE FILE_PATH="coverage/GamingBlog@Development__GamingBlog.rcov" NAME="Development: GamingBlog Coverage Results" MODIFIED="1590927901759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="GamingBlog" />
   </component>
 </project>
