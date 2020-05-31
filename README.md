@@ -1,24 +1,9 @@
-# README
+# OMELA Gaming Blog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+There is owner of web site which has his own account on site. Owner can create, edit and delete posts.
 
-Things you may want to cover:
+### Owner's credencials:
+* Email: admin@omela.com
+* Password: g241o883L5d
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#### URL to deployed site on Heroku: [Omela Gaming Blog](https://omelablog.herokuapp.com/ "Omela Gaming Blog")
