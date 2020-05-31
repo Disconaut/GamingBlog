@@ -46,7 +46,6 @@ $(document).on('ready turbolinks:load', function(){
             'table', 'visualblocks', 'wordcount'],
         imagetools_cors_hosts: ['localhost'],
         autosave_interval: '30s',
-        autosave_restore_when_empty:true,
         autosave_retention: '1440m',
         image_caption: true,
         relative_urls: false,
