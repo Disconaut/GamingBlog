@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= content_for?(:title) ? yield(:title) : "Omela Gaming Blog" %></title>
+  <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Omela Blog is the best gaming blog in the world" %>">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= content_for?(:styles) ? yield(:styles) : '' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= content_for?(:headScripts) ? yield(:headScripts) : '' %>
+</head>
+
+<body>
+<header class="fixed-top bg-dark header-top">
+  <nav class="navbar py-1_5 navbar-expand-lg navbar-dark w-100">
+    <div class="container position-relative">
+      <%= link_to root_path, class: "navbar-brand order-1 order-lg-2 mx-0 flex-shrink-1 col-5 col-sm-4 col-md-3" do %>
+        <%= inline_svg_tag "logo.svg" %>
+      <% end %>
+      <button class="hamburger hamburger--spring navbar-toggler order-2 collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+
+      <div class="col collapse p-0 position-static navbar-collapse order-3 order-lg-1" id="navbarMenu">
+        <ul class="navbar-nav mt-3 m-lg-0 mr-auto">
+          <li class="nav-item">
+            <%= link_to "Home", root_path, class: "nav-link", id: "homeLink" %>
+          </li>
+          <li class="nav-item dropdown">
+            <%= link_to "Posts", "#!", class: "nav-link dropdown-toggle", id: "navbarDropdown",
+                        role: "button", "data-toggle": "dropdown", "aria-haspopup": "true", "aria-expanded": "false",
+                        "data-turbolinks": "false" %>
+            <div class="dropdown-menu shadow p-1_5" aria-labelledby="navbarDropdown">
+              <%= link_to 'All', posts_all_path, class: 'dropdown-item underline' %>
+              <% Post.categories.keys.each do |category| %>
+                <%= link_to category.capitalize, posts_all_path(category), class: 'dropdown-item underline' %>
+              <% end %>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col collapse p-0 navbar-collapse order-4 order-lg-3" id="navbarMenu2">
+        <ul class="navbar-nav mt-3 mt-lg-0 align-items-lg-center ml-auto">
+          <%= render 'partials/user-panel' %>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main role="main">
+  <%= yield %>
+</main>
+<!-- footer -->
+<footer class="bg-dark text-white-50 py-0">
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-5 col-sm-4 col-md-3 mb-2">
+        <%= inline_svg_tag "logo.svg" %>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-1">
+      <div class="col-auto">
+        <ul class="list-unstyled row">
+          <li class="col-auto">
+            <a class="text-white-50" href="#!"><%= fab_icon 'facebook-f' %></a>
+          </li>
+          <li class="col-auto">
+            <a class="text-white-50" href="#!"><%= fab_icon 'twitter' %></a>
+          </li>
+          <li class="col-auto">
+            <a class="text-white-50" href="#!"><%= fab_icon 'youtube' %></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-1">
+      <div class="col-auto">
+        <nav>
+          <ul class="nav list-inline">
+            <li class="list-inline-item nav-item">
+              <%= link_to 'All posts', posts_all_path, class: 'nav-link underline text-uppercase text-white-50 p-0' %></li>
+            <% Post.categories.keys.each do |category| %>
+              <li class="list-inline-item nav-item">
+                <%= link_to category, posts_all_path(category), class: 'nav-link text-uppercase underline text-white-50 p-0' %></li>
+            <% end %>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <small class="font-size-sm">© 2020 Omela Blog. Created by Oles Melanchuk PZ-24 Student</small>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<% if user_signed_in? %>
+  <%= render 'partials/avatar-modal' %>
+<% end %>
+
+<p class="d-none notice"><%= notice %></p>
+<p class="d-none alert"><%= alert %></p>
+
+<%= javascript_pack_tag 'layout', 'data-turbolinks-track': 'reload' %>
+<%= content_for?(:bottomScripts) ? yield(:bottomScripts) : '' %>
+</body>
+</html>

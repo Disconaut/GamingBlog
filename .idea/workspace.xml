@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3580cb4c-d39c-4263-8140-ba6f2da6d4dd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="ERB File" />
+        <option value="JavaScript File" />
+        <option value="SCSS File" />
+        <option value="Ruby File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="patch/createpage" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="1c2YcqhpbtcWUgNKhWnpYgmKotH" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Coding\RailsWebApp\GamingBlog\app\views\posts" />
+      <recent name="E:\Coding\RailsWebApp\GamingBlog\app\views\partials" />
+      <recent name="E:\Coding\RailsWebApp\GamingBlog\app\assets\images\fallback\avatar" />
+      <recent name="E:\Coding\RailsWebApp\GamingBlog\app\assets\images\fallback" />
+      <recent name="E:\Coding\RailsWebApp\GamingBlog\config\webpack" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Coding\RailsWebApp\GamingBlog\public" />
+      <recent name="E:\Coding\RailsWebApp\GamingBlog\app\views\devise\registrations" />
+      <recent name="E:\Coding\RailsWebApp\GamingBlog\app\assets\images\fallback\avatar" />
+      <recent name="E:\Coding\RailsWebApp\GamingBlog\app\views\posts" />
+      <recent name="E:\Coding\RailsWebApp\GamingBlog\app\assets\images" />
+    </key>
+  </component>
+  <component name="RubyModuleManagerSettings">
+    <option name="blackListedRootsPaths">
+      <list>
+        <option value="$PROJECT_DIR$" />
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Rails.Development: GamingBlog">
+    <configuration name="Development: GamingBlog" type="RailsRunConfigurationType" factoryName="Rails">
+      <module name="GamingBlog" />
+      <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="0.0.0.0" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="default" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Production: GamingBlog" type="RailsRunConfigurationType" factoryName="Rails">
+      <module name="GamingBlog" />
+      <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="127.0.0.1" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="production" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="spec: GamingBlog" type="RakeRunConfigurationType" factoryName="Rake">
+      <module name="GamingBlog" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="spec" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE=":rspec " />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TESTOPTS" VALUE="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test: GamingBlog" type="RakeRunConfigurationType" factoryName="Rake">
+      <module name="GamingBlog" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="test" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE=":test_unit " />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TESTOPTS" VALUE="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Rails.Development: GamingBlog" />
+      <item itemvalue="Rails.Production: GamingBlog" />
+      <item itemvalue="Rake.spec: GamingBlog" />
+      <item itemvalue="Rake.test: GamingBlog" />
+    </list>
+  </component>
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3580cb4c-d39c-4263-8140-ba6f2da6d4dd" name="Default Changelist" comment="" />
+      <created>1589728238173</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589728238173</updated>
+      <workItem from="1589728243713" duration="237000" />
+      <workItem from="1589741404158" duration="5145000" />
+      <workItem from="1589798644304" duration="8402000" />
+      <workItem from="1589832363623" duration="8669000" />
+      <workItem from="1589903045225" duration="18494000" />
+      <workItem from="1590403000061" duration="24560000" />
+      <workItem from="1590451123065" duration="1879000" />
+      <workItem from="1590484356377" duration="15071000" />
+      <workItem from="1590505929537" duration="11720000" />
+      <workItem from="1590745591194" duration="6779000" />
+      <workItem from="1590762367620" duration="1596000" />
+      <workItem from="1590769788065" duration="3650000" />
+      <workItem from="1590773708367" duration="1035000" />
+      <workItem from="1590845594835" duration="9264000" />
+      <workItem from="1590927590921" duration="3297000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="218" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590843477081">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state x="414" y="218" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.46.1920.1034@0.46.1920.1034" timestamp="1590843477081" />
+    <state x="731" y="366" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590490027670">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state x="731" y="366" key="#com.intellij.fileTypes.FileTypeChooser/0.46.1920.1034@0.46.1920.1034" timestamp="1590490027670" />
+    <state width="1877" height="269" key="GridCell.Tab.0.bottom" timestamp="1590928991802">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state width="1877" height="269" key="GridCell.Tab.0.bottom/0.46.1920.1034@0.46.1920.1034" timestamp="1590928991802" />
+    <state width="1877" height="269" key="GridCell.Tab.0.center" timestamp="1590928991802">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state width="1877" height="269" key="GridCell.Tab.0.center/0.46.1920.1034@0.46.1920.1034" timestamp="1590928991802" />
+    <state width="1877" height="269" key="GridCell.Tab.0.left" timestamp="1590928991802">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state width="1877" height="269" key="GridCell.Tab.0.left/0.46.1920.1034@0.46.1920.1034" timestamp="1590928991802" />
+    <state width="1877" height="269" key="GridCell.Tab.0.right" timestamp="1590928991802">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state width="1877" height="269" key="GridCell.Tab.0.right/0.46.1920.1034@0.46.1920.1034" timestamp="1590928991802" />
+    <state width="1877" height="269" key="GridCell.Tab.1.bottom" timestamp="1590928991803">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state width="1877" height="269" key="GridCell.Tab.1.bottom/0.46.1920.1034@0.46.1920.1034" timestamp="1590928991803" />
+    <state width="1877" height="269" key="GridCell.Tab.1.center" timestamp="1590928991803">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state width="1877" height="269" key="GridCell.Tab.1.center/0.46.1920.1034@0.46.1920.1034" timestamp="1590928991803" />
+    <state width="1877" height="269" key="GridCell.Tab.1.left" timestamp="1590928991803">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state width="1877" height="269" key="GridCell.Tab.1.left/0.46.1920.1034@0.46.1920.1034" timestamp="1590928991803" />
+    <state width="1877" height="269" key="GridCell.Tab.1.right" timestamp="1590928991803">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state width="1877" height="269" key="GridCell.Tab.1.right/0.46.1920.1034@0.46.1920.1034" timestamp="1590928991803" />
+    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1590779289237">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.46.1920.1034@0.46.1920.1034" timestamp="1590779289237" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GamingBlog@Development__GamingBlog.rcov" NAME="Development: GamingBlog Coverage Results" MODIFIED="1590927901759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="GamingBlog" />
+  </component>
+</project>
